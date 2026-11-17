@@ -15,7 +15,9 @@ class Settings(BaseSettings):
     # Swap for a PostgreSQL DSN in production: postgresql+psycopg://user:pass@host/db
     database_url: str = "sqlite:///./app.db"
 
-    secret_key: str = "dev-insecure-secret-change-me"
+    # Dev-only default. Must be at least 32 bytes for HS256 or PyJWT logs an
+    # InsecureKeyLengthWarning. Always override with SECRET_KEY outside local development.
+    secret_key: str = "dev-insecure-secret-change-me-32b-min"
     access_token_expire_minutes: int = 12 * 60
     jwt_algorithm: str = "HS256"
 
