@@ -134,6 +134,7 @@ monetisation and delivery plan are open items to be defined next.
 | Tech stack | **decided** | Angular 22 frontend ([logisistance-web](https://github.com/deniskoliban/logisistance-web)) + Python 3.12 / FastAPI backend (this repository) |
 | Source layout | **decided** | Two repositories, split from the initial v0.1 monorepo: independent deploy lifecycles, API contract exchanged through `/openapi.json` |
 | UI framework | **decided** | Angular Material 3 with light and dark themes driven by `mat.theme()` and CSS `color-scheme` |
+| Localisation | **decided** | Transloco 9 (`@jsverse/transloco`), English + Russian, switchable at runtime without reload. UI strings and validation messages live in the frontend dictionaries; API `detail` messages stay English for now — translating them needs stable error codes |
 | Forms | **decided** | Angular Signal Forms (`@angular/forms/signals`): model in a `signal`, validation in the schema, `[formRoot]`/`[formField]` bindings |
 | Responsiveness | **required** | Every screen must be usable at 360 px (phone), 768 px (tablet) and 1440 px (desktop) with no horizontal scrolling |
 | Database | **decided for v0.1** | SQLite via SQLAlchemy 2; `DATABASE_URL` swaps to PostgreSQL without code changes. Add Alembic before the first deploy |
