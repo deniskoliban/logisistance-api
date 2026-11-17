@@ -83,7 +83,10 @@ docs/PROJECT_SPEC.md     # product brief and decisions
 - Another driver's vehicle answers `404`, not `403`.
 - Drivers are stored with a `date_of_birth`; `age` is derived on every response, so it can never go
   stale. The rules (18–100, no future dates) live in `app/core/dates.py`.
-- The country must be an EU/EEA/CH code; the API also serves the list the UI picks from.
+- Two countries are stored per driver: `country` is the country of residence and `company_country` is
+  where the carrier company is registered — for EU operators these are often different, and freight
+  search will filter by both. Both must be EU/EEA/CH codes.
+- The API also serves the country list the UI picks from.
 - Plates are normalised to upper case and unique per owner.
 
 ## Schema changes

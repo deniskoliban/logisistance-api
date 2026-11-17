@@ -31,6 +31,7 @@ DEFAULT_USER: dict[str, Any] = {
     "full_name": "Jan Kowalski",
     "date_of_birth": "1985-04-12",
     "country": "PL",
+    "company_country": "PL",
     "city": "Warsaw",
 }
 

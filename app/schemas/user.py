@@ -21,7 +21,12 @@ class UserRegister(BaseModel):
     password: Password
     full_name: Name
     date_of_birth: BirthDate
-    country: str = Field(min_length=2, max_length=2, description="ISO 3166-1 alpha-2 code")
+    country: str = Field(
+        min_length=2, max_length=2, description="Country of residence, ISO 3166-1 alpha-2"
+    )
+    company_country: str = Field(
+        min_length=2, max_length=2, description="Country where the company is registered"
+    )
     city: City
 
     @field_validator("full_name", "city")
@@ -32,7 +37,7 @@ class UserRegister(BaseModel):
             raise ValueError("must contain at least 2 non-space characters")
         return cleaned
 
-    @field_validator("country")
+    @field_validator("country", "company_country")
     @classmethod
     def _validate_country(cls, value: str) -> str:
         return normalise_country(value, allowed=COUNTRY_CODES)
@@ -54,6 +59,7 @@ class UserUpdate(BaseModel):
     full_name: Name | None = None
     date_of_birth: BirthDate | None = None
     country: str | None = Field(default=None, min_length=2, max_length=2)
+    company_country: str | None = Field(default=None, min_length=2, max_length=2)
     city: City | None = None
 
     @field_validator("full_name", "city")
@@ -66,7 +72,7 @@ class UserUpdate(BaseModel):
             raise ValueError("must contain at least 2 non-space characters")
         return cleaned
 
-    @field_validator("country")
+    @field_validator("country", "company_country")
     @classmethod
     def _validate_country(cls, value: str | None) -> str | None:
         if value is None:
@@ -87,6 +93,7 @@ class UserRead(BaseModel):
     full_name: str
     date_of_birth: date
     country: str
+    company_country: str
     city: str
     created_at: datetime
     updated_at: datetime

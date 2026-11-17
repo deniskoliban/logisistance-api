@@ -27,6 +27,7 @@ def test_register_returns_token_and_profile(client: TestClient) -> None:
             "full_name": "Anna Nowak",
             "date_of_birth": "1996-03-15",
             "country": "de",
+            "company_country": "PL",
             "city": "  Munich ",
         },
     )
@@ -41,6 +42,7 @@ def test_register_returns_token_and_profile(client: TestClient) -> None:
     assert user["full_name"] == "Anna Nowak"
     # country is normalised to upper case, city whitespace collapsed
     assert user["country"] == "DE"
+    assert user["company_country"] == "PL"
     assert user["city"] == "Munich"
     assert user["date_of_birth"] == "1996-03-15"
     # age is derived from the stored date, never sent by the client
@@ -57,6 +59,7 @@ def test_register_rejects_duplicate_email(client: TestClient) -> None:
         "full_name": "Jan Kowalski",
         "date_of_birth": "1986-07-01",
         "country": "PL",
+        "company_country": "PL",
         "city": "Gdansk",
     }
     assert client.post("/api/v1/auth/register", json=payload).status_code == 201
@@ -77,6 +80,7 @@ def test_register_rejects_underage_driver(client: TestClient) -> None:
             "full_name": "Too Young",
             "date_of_birth": birth_date_years_ago(17),
             "country": "PL",
+            "company_country": "PL",
             "city": "Krakow",
         },
     )
@@ -93,6 +97,7 @@ def test_register_rejects_future_date_of_birth(client: TestClient) -> None:
             "full_name": "Not Born Yet",
             "date_of_birth": (date.today() + timedelta(days=1)).isoformat(),
             "country": "PL",
+            "company_country": "PL",
             "city": "Krakow",
         },
     )
@@ -109,7 +114,25 @@ def test_register_rejects_unsupported_country(client: TestClient) -> None:
             "full_name": "Far Away",
             "date_of_birth": "1990-02-02",
             "country": "US",
+            "company_country": "PL",
             "city": "Austin",
+        },
+    )
+    assert response.status_code == 422
+    assert "unsupported country code" in response.text
+
+
+def test_register_rejects_unsupported_company_country(client: TestClient) -> None:
+    response = client.post(
+        "/api/v1/auth/register",
+        json={
+            "email": "offshore@example.com",
+            "password": "SuperSecret123",
+            "full_name": "Off Shore",
+            "date_of_birth": "1990-02-02",
+            "country": "PL",
+            "company_country": "PA",
+            "city": "Warsaw",
         },
     )
     assert response.status_code == 422
@@ -125,6 +148,7 @@ def test_register_rejects_short_password(client: TestClient) -> None:
             "full_name": "Weak Pass",
             "date_of_birth": "1990-02-02",
             "country": "PL",
+            "company_country": "PL",
             "city": "Lodz",
         },
     )
@@ -187,6 +211,7 @@ def test_update_profile(client: TestClient, driver: dict) -> None:
             "date_of_birth": new_birth_date,
             "city": "Poznan",
             "country": "cz",
+            "company_country": "sk",
         },
     )
 
@@ -197,6 +222,7 @@ def test_update_profile(client: TestClient, driver: dict) -> None:
     assert body["age"] == 40
     assert body["city"] == "Poznan"
     assert body["country"] == "CZ"
+    assert body["company_country"] == "SK"
 
     # partial update leaves other fields alone
     client.patch("/api/v1/users/me", headers=driver["headers"], json={"city": "Gdynia"})
