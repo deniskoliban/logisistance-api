@@ -1,5 +1,8 @@
 from __future__ import annotations
 
+from datetime import date
+
+from sqlalchemy import Date
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 
 from app.db.base import Base, TimestampMixin
@@ -14,7 +17,7 @@ class User(TimestampMixin, Base):
 
     # Basic profile information collected at registration.
     full_name: Mapped[str] = mapped_column(nullable=False)
-    age: Mapped[int] = mapped_column(nullable=False)
+    date_of_birth: Mapped[date] = mapped_column(Date, nullable=False)
     country: Mapped[str] = mapped_column(index=True, nullable=False)  # ISO 3166-1 alpha-2
     city: Mapped[str] = mapped_column(nullable=False)
 

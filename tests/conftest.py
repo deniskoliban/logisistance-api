@@ -29,7 +29,7 @@ DEFAULT_USER: dict[str, Any] = {
     "email": "driver@example.com",
     "password": "SuperSecret123",
     "full_name": "Jan Kowalski",
-    "age": 34,
+    "date_of_birth": "1985-04-12",
     "country": "PL",
     "city": "Warsaw",
 }

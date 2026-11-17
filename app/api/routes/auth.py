@@ -30,7 +30,7 @@ def register(payload: UserRegister, db: Session = Depends(get_db)) -> AuthRespon
         email=email,
         hashed_password=hash_password(payload.password),
         full_name=payload.full_name,
-        age=payload.age,
+        date_of_birth=payload.date_of_birth,
         country=payload.country,
         city=payload.city,
     )

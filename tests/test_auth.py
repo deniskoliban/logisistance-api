@@ -2,7 +2,20 @@
 
 from __future__ import annotations
 
+from datetime import date, timedelta
+
 from fastapi.testclient import TestClient
+
+from app.core.dates import years_since
+
+
+def birth_date_years_ago(years: int) -> str:
+    """ISO date of birth exactly `years` years ago, safe around 29 February."""
+    today = date.today()
+    try:
+        return today.replace(year=today.year - years).isoformat()
+    except ValueError:
+        return today.replace(year=today.year - years, day=28).isoformat()
 
 
 def test_register_returns_token_and_profile(client: TestClient) -> None:
@@ -12,7 +25,7 @@ def test_register_returns_token_and_profile(client: TestClient) -> None:
             "email": "anna@example.com",
             "password": "SuperSecret123",
             "full_name": "Anna Nowak",
-            "age": 29,
+            "date_of_birth": "1996-03-15",
             "country": "de",
             "city": "  Munich ",
         },
@@ -29,6 +42,9 @@ def test_register_returns_token_and_profile(client: TestClient) -> None:
     # country is normalised to upper case, city whitespace collapsed
     assert user["country"] == "DE"
     assert user["city"] == "Munich"
+    assert user["date_of_birth"] == "1996-03-15"
+    # age is derived from the stored date, never sent by the client
+    assert user["age"] == years_since(date(1996, 3, 15))
     assert user["id"] > 0
     assert "password" not in user
     assert "hashed_password" not in user
@@ -39,7 +55,7 @@ def test_register_rejects_duplicate_email(client: TestClient) -> None:
         "email": "dup@example.com",
         "password": "SuperSecret123",
         "full_name": "Jan Kowalski",
-        "age": 40,
+        "date_of_birth": "1986-07-01",
         "country": "PL",
         "city": "Gdansk",
     }
@@ -59,12 +75,29 @@ def test_register_rejects_underage_driver(client: TestClient) -> None:
             "email": "kid@example.com",
             "password": "SuperSecret123",
             "full_name": "Too Young",
-            "age": 17,
+            "date_of_birth": birth_date_years_ago(17),
             "country": "PL",
             "city": "Krakow",
         },
     )
     assert response.status_code == 422
+    assert "at least 18" in response.text
+
+
+def test_register_rejects_future_date_of_birth(client: TestClient) -> None:
+    response = client.post(
+        "/api/v1/auth/register",
+        json={
+            "email": "future@example.com",
+            "password": "SuperSecret123",
+            "full_name": "Not Born Yet",
+            "date_of_birth": (date.today() + timedelta(days=1)).isoformat(),
+            "country": "PL",
+            "city": "Krakow",
+        },
+    )
+    assert response.status_code == 422
+    assert "future" in response.text
 
 
 def test_register_rejects_unsupported_country(client: TestClient) -> None:
@@ -74,7 +107,7 @@ def test_register_rejects_unsupported_country(client: TestClient) -> None:
             "email": "far@example.com",
             "password": "SuperSecret123",
             "full_name": "Far Away",
-            "age": 30,
+            "date_of_birth": "1990-02-02",
             "country": "US",
             "city": "Austin",
         },
@@ -90,7 +123,7 @@ def test_register_rejects_short_password(client: TestClient) -> None:
             "email": "weak@example.com",
             "password": "short",
             "full_name": "Weak Pass",
-            "age": 30,
+            "date_of_birth": "1990-02-02",
             "country": "PL",
             "city": "Lodz",
         },
@@ -140,29 +173,44 @@ def test_me_returns_current_profile(client: TestClient, driver: dict) -> None:
     assert response.status_code == 200
     assert response.json()["email"] == "driver@example.com"
     assert response.json()["country"] == "PL"
+    assert response.json()["date_of_birth"] == "1985-04-12"
 
 
 def test_update_profile(client: TestClient, driver: dict) -> None:
+    new_birth_date = birth_date_years_ago(40)
+
     response = client.patch(
         "/api/v1/users/me",
         headers=driver["headers"],
-        json={"full_name": "Jan Maria Kowalski", "age": 35, "city": "Poznan", "country": "cz"},
+        json={
+            "full_name": "Jan Maria Kowalski",
+            "date_of_birth": new_birth_date,
+            "city": "Poznan",
+            "country": "cz",
+        },
     )
 
     assert response.status_code == 200, response.text
     body = response.json()
     assert body["full_name"] == "Jan Maria Kowalski"
-    assert body["age"] == 35
+    assert body["date_of_birth"] == new_birth_date
+    assert body["age"] == 40
     assert body["city"] == "Poznan"
     assert body["country"] == "CZ"
 
     # partial update leaves other fields alone
-    client.patch("/api/v1/users/me", headers=driver["headers"], json={"age": 36})
+    client.patch("/api/v1/users/me", headers=driver["headers"], json={"city": "Gdynia"})
     refreshed = client.get("/api/v1/users/me", headers=driver["headers"]).json()
-    assert refreshed["age"] == 36
+    assert refreshed["city"] == "Gdynia"
     assert refreshed["full_name"] == "Jan Maria Kowalski"
+    assert refreshed["date_of_birth"] == new_birth_date
 
 
-def test_update_profile_rejects_bad_age(client: TestClient, driver: dict) -> None:
-    response = client.patch("/api/v1/users/me", headers=driver["headers"], json={"age": 150})
+def test_update_profile_rejects_underage_date_of_birth(client: TestClient, driver: dict) -> None:
+    response = client.patch(
+        "/api/v1/users/me",
+        headers=driver["headers"],
+        json={"date_of_birth": birth_date_years_ago(12)},
+    )
     assert response.status_code == 422
+    assert "at least 18" in response.text

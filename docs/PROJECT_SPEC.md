@@ -138,6 +138,7 @@ monetisation and delivery plan are open items to be defined next.
 | Responsiveness | **required** | Every screen must be usable at 360 px (phone), 768 px (tablet) and 1440 px (desktop) with no horizontal scrolling |
 | Database | **decided for v0.1** | SQLite via SQLAlchemy 2; `DATABASE_URL` swaps to PostgreSQL without code changes. Add Alembic before the first deploy |
 | Auth | **decided for v0.1** | Email + password, Argon2 hashing, JWT bearer token (12 h) stored in `localStorage` |
+| Driver age | **decided** | Stored as `date_of_birth` (ISO date); `age` is derived on every response, so it cannot go stale. Rules 18–100 and no future dates live in `app/core/dates.py` |
 | First slice (v0.1) | **shipped** | Registration + driver profile (name, age, country, city) + basic vehicle profiles |
 | Freight exchange access (API keys, partner agreements) | TBD | TIMOCOM / Trans.eu / Teleroute / Wtransnet each need authorised access, so v0.2 starts with a mock provider adapter |
 | Routing provider | TBD | Needs commercial-vehicle restrictions (e.g. HERE, TomTom, PTV, GraphHopper) |

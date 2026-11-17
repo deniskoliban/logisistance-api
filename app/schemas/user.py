@@ -2,15 +2,16 @@
 
 from __future__ import annotations
 
-from datetime import datetime
+from datetime import date, datetime
 from typing import Annotated
 
-from pydantic import BaseModel, ConfigDict, EmailStr, Field, field_validator
+from pydantic import BaseModel, ConfigDict, EmailStr, Field, computed_field, field_validator
 
+from app.core.dates import validate_driver_birth_date, years_since
 from app.core.reference import COUNTRY_CODES, normalise_country, normalise_whitespace
 
 Name = Annotated[str, Field(min_length=2, max_length=120)]
-Age = Annotated[int, Field(ge=18, le=100, description="Driver age in years")]
+BirthDate = Annotated[date, Field(description="Date of birth, ISO 8601 (YYYY-MM-DD)")]
 City = Annotated[str, Field(min_length=2, max_length=120)]
 Password = Annotated[str, Field(min_length=8, max_length=128)]
 
@@ -19,7 +20,7 @@ class UserRegister(BaseModel):
     email: EmailStr
     password: Password
     full_name: Name
-    age: Age
+    date_of_birth: BirthDate
     country: str = Field(min_length=2, max_length=2, description="ISO 3166-1 alpha-2 code")
     city: City
 
@@ -36,6 +37,11 @@ class UserRegister(BaseModel):
     def _validate_country(cls, value: str) -> str:
         return normalise_country(value, allowed=COUNTRY_CODES)
 
+    @field_validator("date_of_birth")
+    @classmethod
+    def _validate_date_of_birth(cls, value: date) -> date:
+        return validate_driver_birth_date(value)
+
 
 class UserLogin(BaseModel):
     email: EmailStr
@@ -46,7 +52,7 @@ class UserUpdate(BaseModel):
     """Partial profile update. Unset fields are left untouched."""
 
     full_name: Name | None = None
-    age: Age | None = None
+    date_of_birth: BirthDate | None = None
     country: str | None = Field(default=None, min_length=2, max_length=2)
     city: City | None = None
 
@@ -67,6 +73,11 @@ class UserUpdate(BaseModel):
             return None
         return normalise_country(value, allowed=COUNTRY_CODES)
 
+    @field_validator("date_of_birth")
+    @classmethod
+    def _validate_date_of_birth(cls, value: date | None) -> date | None:
+        return None if value is None else validate_driver_birth_date(value)
+
 
 class UserRead(BaseModel):
     model_config = ConfigDict(from_attributes=True)
@@ -74,11 +85,17 @@ class UserRead(BaseModel):
     id: int
     email: EmailStr
     full_name: str
-    age: int
+    date_of_birth: date
     country: str
     city: str
     created_at: datetime
     updated_at: datetime
+
+    @computed_field
+    @property
+    def age(self) -> int:
+        """Derived, so it can never drift from the stored date of birth."""
+        return years_since(self.date_of_birth)
 
 
 class Token(BaseModel):

@@ -81,8 +81,16 @@ docs/PROJECT_SPEC.md     # product brief and decisions
 
 - Login returns the same error for unknown email and wrong password — no account enumeration.
 - Another driver's vehicle answers `404`, not `403`.
+- Drivers are stored with a `date_of_birth`; `age` is derived on every response, so it can never go
+  stale. The rules (18–100, no future dates) live in `app/core/dates.py`.
+- The country must be an EU/EEA/CH code; the API also serves the list the UI picks from.
 - Plates are normalised to upper case and unique per owner.
-- Age is validated 18–100; country must be an EU/EEA/CH code.
+
+## Schema changes
+
+There are no migrations yet: tables come from the SQLAlchemy models at startup and existing SQLite
+files are **not** altered. After changing a model, delete `app.db` (or point `DATABASE_URL`
+elsewhere) and restart. Alembic is the planned fix before the first real deploy.
 
 ## Roadmap
 
