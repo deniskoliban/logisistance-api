@@ -83,9 +83,10 @@ docs/PROJECT_SPEC.md     # product brief and decisions
 - Another driver's vehicle answers `404`, not `403`.
 - Drivers are stored with a `date_of_birth`; `age` is derived on every response, so it can never go
   stale. The rules (18–100, no future dates) live in `app/core/dates.py`.
-- Two countries are stored per driver: `country` is the country of residence and `company_country` is
-  where the carrier company is registered — for EU operators these are often different, and freight
-  search will filter by both. Both must be EU/EEA/CH codes.
+- MVP assumes a self-employed carrier (sole proprietor), so a driver has one country: `country` is the
+  country of residence and doubles as the default starting point for load search. A company mode with
+  several drivers and vehicles is planned; `company_country` will come back with it.
+- The country must be an EU/EEA/CH code.
 - The API also serves the country list the UI picks from.
 - Plates are normalised to upper case and unique per owner.
 

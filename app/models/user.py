@@ -18,10 +18,9 @@ class User(TimestampMixin, Base):
     # Basic profile information collected at registration.
     full_name: Mapped[str] = mapped_column(nullable=False)
     date_of_birth: Mapped[date] = mapped_column(Date, nullable=False)
-    # Where the driver lives (ISO 3166-1 alpha-2).
+    # Country of residence — also the default starting point for load search (ISO 3166-1 alpha-2).
+    # MVP assumes a self-employed carrier; a company mode with drivers and vehicles comes later.
     country: Mapped[str] = mapped_column(index=True, nullable=False)
-    # Where the carrier company is registered; often a different country.
-    company_country: Mapped[str] = mapped_column(index=True, nullable=False)
     city: Mapped[str] = mapped_column(nullable=False)
 
     vehicles: Mapped[list["Vehicle"]] = relationship(  # noqa: F821
