@@ -37,7 +37,7 @@ The web client is expected at <http://localhost:4200>, which is already in `CORS
 ## Tests
 
 ```powershell
-.\.venv\Scripts\python.exe -m pytest        # 26 tests
+.\.venv\Scripts\python.exe -m pytest        # 33 tests
 ```
 
 ## Endpoints
