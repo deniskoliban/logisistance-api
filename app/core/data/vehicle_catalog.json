@@ -1,0 +1,5070 @@
+{
+  "_source": "Vehicle data by VehiclesDB (https://vehiclesdb.com), CC BY 4.0, curated model families for core makes. Regenerate with scripts/build_vehicle_catalog.py",
+  "makes": [
+    {
+      "code": "man",
+      "name": "MAN",
+      "core": true,
+      "kinds": [
+        "truck",
+        "van"
+      ],
+      "models": [
+        {
+          "code": "tgx",
+          "name": "TGX"
+        },
+        {
+          "code": "tgs",
+          "name": "TGS"
+        },
+        {
+          "code": "tgl",
+          "name": "TGL"
+        },
+        {
+          "code": "tgm",
+          "name": "TGM"
+        },
+        {
+          "code": "tge",
+          "name": "TGE"
+        },
+        {
+          "code": "tga",
+          "name": "TGA"
+        },
+        {
+          "code": "f2000",
+          "name": "F2000"
+        },
+        {
+          "code": "m2000",
+          "name": "M2000"
+        },
+        {
+          "code": "l2000",
+          "name": "L2000"
+        }
+      ]
+    },
+    {
+      "code": "daf",
+      "name": "DAF",
+      "core": true,
+      "kinds": [
+        "truck",
+        "van"
+      ],
+      "models": [
+        {
+          "code": "xg",
+          "name": "XG"
+        },
+        {
+          "code": "xf",
+          "name": "XF"
+        },
+        {
+          "code": "xd",
+          "name": "XD"
+        },
+        {
+          "code": "xb",
+          "name": "XB"
+        },
+        {
+          "code": "cf",
+          "name": "CF"
+        },
+        {
+          "code": "lf",
+          "name": "LF"
+        },
+        {
+          "code": "95",
+          "name": "95"
+        },
+        {
+          "code": "85",
+          "name": "85"
+        }
+      ]
+    },
+    {
+      "code": "scania",
+      "name": "Scania",
+      "core": true,
+      "kinds": [
+        "truck"
+      ],
+      "models": [
+        {
+          "code": "s",
+          "name": "S"
+        },
+        {
+          "code": "r",
+          "name": "R"
+        },
+        {
+          "code": "g",
+          "name": "G"
+        },
+        {
+          "code": "p",
+          "name": "P"
+        },
+        {
+          "code": "l",
+          "name": "L"
+        },
+        {
+          "code": "t",
+          "name": "T"
+        },
+        {
+          "code": "4-series",
+          "name": "4-Series"
+        },
+        {
+          "code": "3-series",
+          "name": "3-Series"
+        }
+      ]
+    },
+    {
+      "code": "volvo",
+      "name": "Volvo",
+      "core": true,
+      "kinds": [
+        "truck"
+      ],
+      "models": [
+        {
+          "code": "fh",
+          "name": "FH"
+        },
+        {
+          "code": "fh16",
+          "name": "FH16"
+        },
+        {
+          "code": "fm",
+          "name": "FM"
+        },
+        {
+          "code": "fmx",
+          "name": "FMX"
+        },
+        {
+          "code": "fe",
+          "name": "FE"
+        },
+        {
+          "code": "fl",
+          "name": "FL"
+        },
+        {
+          "code": "f10",
+          "name": "F10"
+        },
+        {
+          "code": "f12",
+          "name": "F12"
+        },
+        {
+          "code": "f16",
+          "name": "F16"
+        },
+        {
+          "code": "fl10",
+          "name": "FL10"
+        }
+      ]
+    },
+    {
+      "code": "mercedes-benz",
+      "name": "Mercedes-Benz",
+      "core": true,
+      "kinds": [
+        "truck",
+        "van"
+      ],
+      "models": [
+        {
+          "code": "actros",
+          "name": "Actros"
+        },
+        {
+          "code": "arocs",
+          "name": "Arocs"
+        },
+        {
+          "code": "atego",
+          "name": "Atego"
+        },
+        {
+          "code": "antos",
+          "name": "Antos"
+        },
+        {
+          "code": "axor",
+          "name": "Axor"
+        },
+        {
+          "code": "econic",
+          "name": "Econic"
+        },
+        {
+          "code": "sk",
+          "name": "SK"
+        },
+        {
+          "code": "sprinter",
+          "name": "Sprinter"
+        },
+        {
+          "code": "vito",
+          "name": "Vito"
+        },
+        {
+          "code": "citan",
+          "name": "Citan"
+        },
+        {
+          "code": "unimog",
+          "name": "Unimog"
+        }
+      ]
+    },
+    {
+      "code": "iveco",
+      "name": "Iveco",
+      "core": true,
+      "kinds": [
+        "truck",
+        "van"
+      ],
+      "models": [
+        {
+          "code": "s-way",
+          "name": "S-Way"
+        },
+        {
+          "code": "x-way",
+          "name": "X-Way"
+        },
+        {
+          "code": "t-way",
+          "name": "T-Way"
+        },
+        {
+          "code": "stralis",
+          "name": "Stralis"
+        },
+        {
+          "code": "eurocargo",
+          "name": "Eurocargo"
+        },
+        {
+          "code": "eurotech",
+          "name": "Eurotech"
+        },
+        {
+          "code": "eurotrakker",
+          "name": "Eurotrakker"
+        },
+        {
+          "code": "trakker",
+          "name": "Trakker"
+        },
+        {
+          "code": "daily",
+          "name": "Daily"
+        }
+      ]
+    },
+    {
+      "code": "renault",
+      "name": "Renault Trucks",
+      "core": true,
+      "kinds": [
+        "truck",
+        "van"
+      ],
+      "models": [
+        {
+          "code": "t",
+          "name": "T"
+        },
+        {
+          "code": "c",
+          "name": "C"
+        },
+        {
+          "code": "k",
+          "name": "K"
+        },
+        {
+          "code": "master",
+          "name": "Master"
+        },
+        {
+          "code": "trafic",
+          "name": "Trafic"
+        },
+        {
+          "code": "kangoo",
+          "name": "Kangoo"
+        },
+        {
+          "code": "magnum",
+          "name": "Magnum"
+        },
+        {
+          "code": "premium",
+          "name": "Premium"
+        },
+        {
+          "code": "midlum",
+          "name": "Midlum"
+        },
+        {
+          "code": "kerax",
+          "name": "Kerax"
+        }
+      ]
+    },
+    {
+      "code": "isuzu",
+      "name": "Isuzu",
+      "core": true,
+      "kinds": [
+        "truck",
+        "van"
+      ],
+      "models": [
+        {
+          "code": "d-max",
+          "name": "D-Max"
+        },
+        {
+          "code": "n-series",
+          "name": "N-Series"
+        },
+        {
+          "code": "f-series",
+          "name": "F-Series"
+        },
+        {
+          "code": "grafter",
+          "name": "Grafter"
+        },
+        {
+          "code": "forward",
+          "name": "Forward"
+        }
+      ]
+    },
+    {
+      "code": "mitsubishi-fuso",
+      "name": "Mitsubishi Fuso",
+      "core": true,
+      "kinds": [
+        "truck",
+        "van"
+      ],
+      "models": [
+        {
+          "code": "canter",
+          "name": "Canter"
+        },
+        {
+          "code": "ecanter",
+          "name": "eCanter"
+        },
+        {
+          "code": "fe",
+          "name": "FE"
+        },
+        {
+          "code": "fv",
+          "name": "FV"
+        }
+      ]
+    },
+    {
+      "code": "sisu",
+      "name": "Sisu",
+      "core": true,
+      "kinds": [
+        "truck"
+      ],
+      "models": [
+        {
+          "code": "polar",
+          "name": "Polar"
+        },
+        {
+          "code": "r-series",
+          "name": "R-Series"
+        },
+        {
+          "code": "c-series",
+          "name": "C-Series"
+        }
+      ]
+    },
+    {
+      "code": "tatra",
+      "name": "Tatra",
+      "core": true,
+      "kinds": [
+        "truck"
+      ],
+      "models": [
+        {
+          "code": "phoenix",
+          "name": "Phoenix"
+        },
+        {
+          "code": "force",
+          "name": "Force"
+        },
+        {
+          "code": "t815",
+          "name": "T815"
+        }
+      ]
+    },
+    {
+      "code": "volkswagen",
+      "name": "Volkswagen",
+      "core": true,
+      "kinds": [
+        "truck",
+        "van"
+      ],
+      "models": [
+        {
+          "code": "crafter",
+          "name": "Crafter"
+        },
+        {
+          "code": "transporter",
+          "name": "Transporter"
+        },
+        {
+          "code": "caddy",
+          "name": "Caddy"
+        },
+        {
+          "code": "amarok",
+          "name": "Amarok"
+        },
+        {
+          "code": "id-buzz-cargo",
+          "name": "ID. Buzz Cargo"
+        }
+      ]
+    },
+    {
+      "code": "ford",
+      "name": "Ford",
+      "core": true,
+      "kinds": [
+        "truck",
+        "van"
+      ],
+      "models": [
+        {
+          "code": "transit",
+          "name": "Transit"
+        },
+        {
+          "code": "transit-custom",
+          "name": "Transit Custom"
+        },
+        {
+          "code": "transit-connect",
+          "name": "Transit Connect"
+        },
+        {
+          "code": "transit-courier",
+          "name": "Transit Courier"
+        },
+        {
+          "code": "ranger",
+          "name": "Ranger"
+        },
+        {
+          "code": "f-max",
+          "name": "F-Max"
+        }
+      ]
+    },
+    {
+      "code": "fiat",
+      "name": "Fiat",
+      "core": true,
+      "kinds": [
+        "truck",
+        "van"
+      ],
+      "models": [
+        {
+          "code": "ducato",
+          "name": "Ducato"
+        },
+        {
+          "code": "doblo",
+          "name": "Doblò"
+        },
+        {
+          "code": "fiorino",
+          "name": "Fiorino"
+        },
+        {
+          "code": "scudo",
+          "name": "Scudo"
+        }
+      ]
+    },
+    {
+      "code": "peugeot",
+      "name": "Peugeot",
+      "core": true,
+      "kinds": [
+        "truck",
+        "van"
+      ],
+      "models": [
+        {
+          "code": "boxer",
+          "name": "Boxer"
+        },
+        {
+          "code": "expert",
+          "name": "Expert"
+        },
+        {
+          "code": "partner",
+          "name": "Partner"
+        },
+        {
+          "code": "bipper",
+          "name": "Bipper"
+        }
+      ]
+    },
+    {
+      "code": "citroen",
+      "name": "Citroën",
+      "core": true,
+      "kinds": [
+        "truck",
+        "van"
+      ],
+      "models": [
+        {
+          "code": "jumper",
+          "name": "Jumper"
+        },
+        {
+          "code": "jumpy",
+          "name": "Jumpy"
+        },
+        {
+          "code": "berlingo",
+          "name": "Berlingo"
+        },
+        {
+          "code": "nemo",
+          "name": "Nemo"
+        }
+      ]
+    },
+    {
+      "code": "opel",
+      "name": "Opel",
+      "core": true,
+      "kinds": [
+        "truck",
+        "van"
+      ],
+      "models": [
+        {
+          "code": "movano",
+          "name": "Movano"
+        },
+        {
+          "code": "vivaro",
+          "name": "Vivaro"
+        },
+        {
+          "code": "combo",
+          "name": "Combo"
+        }
+      ]
+    },
+    {
+      "code": "nissan",
+      "name": "Nissan",
+      "core": true,
+      "kinds": [
+        "truck",
+        "van"
+      ],
+      "models": [
+        {
+          "code": "interstar",
+          "name": "Interstar"
+        },
+        {
+          "code": "primastar",
+          "name": "Primastar"
+        },
+        {
+          "code": "nv400",
+          "name": "NV400"
+        },
+        {
+          "code": "nv300",
+          "name": "NV300"
+        },
+        {
+          "code": "townstar",
+          "name": "Townstar"
+        }
+      ]
+    },
+    {
+      "code": "toyota",
+      "name": "Toyota",
+      "core": true,
+      "kinds": [
+        "truck",
+        "van"
+      ],
+      "models": [
+        {
+          "code": "proace",
+          "name": "Proace"
+        },
+        {
+          "code": "proace-city",
+          "name": "Proace City"
+        },
+        {
+          "code": "hilux",
+          "name": "Hilux"
+        }
+      ]
+    },
+    {
+      "code": "maxus",
+      "name": "Maxus",
+      "core": true,
+      "kinds": [
+        "truck",
+        "van"
+      ],
+      "models": [
+        {
+          "code": "deliver-7",
+          "name": "Deliver 7"
+        },
+        {
+          "code": "deliver-9",
+          "name": "Deliver 9"
+        },
+        {
+          "code": "edeliver-3",
+          "name": "eDeliver 3"
+        },
+        {
+          "code": "edeliver-9",
+          "name": "eDeliver 9"
+        },
+        {
+          "code": "t60",
+          "name": "T60"
+        },
+        {
+          "code": "t90",
+          "name": "T90"
+        }
+      ]
+    },
+    {
+      "code": "byd",
+      "name": "BYD",
+      "core": true,
+      "kinds": [
+        "truck",
+        "van"
+      ],
+      "models": [
+        {
+          "code": "e-vali",
+          "name": "E-Vali"
+        },
+        {
+          "code": "etp3",
+          "name": "ETP3"
+        },
+        {
+          "code": "t3",
+          "name": "T3"
+        }
+      ]
+    },
+    {
+      "code": "volta-trucks",
+      "name": "Volta Trucks",
+      "core": true,
+      "kinds": [
+        "truck"
+      ],
+      "models": [
+        {
+          "code": "zero",
+          "name": "Zero"
+        }
+      ]
+    },
+    {
+      "code": "agrale",
+      "name": "Agrale",
+      "core": false,
+      "kinds": [
+        "truck"
+      ],
+      "models": [
+        {
+          "code": "ma-15-0",
+          "name": "MA 15.0"
+        }
+      ]
+    },
+    {
+      "code": "aixam",
+      "name": "Aixam",
+      "core": false,
+      "kinds": [
+        "van"
+      ],
+      "models": [
+        {
+          "code": "mega",
+          "name": "Mega"
+        }
+      ]
+    },
+    {
+      "code": "albach",
+      "name": "Albach",
+      "core": false,
+      "kinds": [
+        "truck"
+      ],
+      "models": [
+        {
+          "code": "diamant",
+          "name": "Diamant"
+        }
+      ]
+    },
+    {
+      "code": "alexander-dennis",
+      "name": "Alexander Dennis",
+      "core": false,
+      "kinds": [
+        "truck"
+      ],
+      "models": [
+        {
+          "code": "ecollect",
+          "name": "Ecollect"
+        }
+      ]
+    },
+    {
+      "code": "alke",
+      "name": "Alke",
+      "core": false,
+      "kinds": [
+        "van"
+      ],
+      "models": [
+        {
+          "code": "atx",
+          "name": "Atx"
+        },
+        {
+          "code": "atx340e",
+          "name": "ATX340E"
+        },
+        {
+          "code": "atx340eh",
+          "name": "ATX340EH"
+        }
+      ]
+    },
+    {
+      "code": "am-general",
+      "name": "Am General",
+      "core": false,
+      "kinds": [
+        "truck",
+        "van"
+      ],
+      "models": [
+        {
+          "code": "hummer",
+          "name": "Hummer"
+        }
+      ]
+    },
+    {
+      "code": "ameline",
+      "name": "Ameline",
+      "core": false,
+      "kinds": [
+        "van"
+      ],
+      "models": [
+        {
+          "code": "master",
+          "name": "Master"
+        }
+      ]
+    },
+    {
+      "code": "atm",
+      "name": "Atm",
+      "core": false,
+      "kinds": [
+        "van"
+      ],
+      "models": [
+        {
+          "code": "master",
+          "name": "Master"
+        }
+      ]
+    },
+    {
+      "code": "austin",
+      "name": "Austin",
+      "core": false,
+      "kinds": [
+        "truck",
+        "van"
+      ],
+      "models": [
+        {
+          "code": "6cwt",
+          "name": "6CWT"
+        },
+        {
+          "code": "a30",
+          "name": "A30"
+        },
+        {
+          "code": "a35",
+          "name": "A35"
+        },
+        {
+          "code": "a40",
+          "name": "A40"
+        },
+        {
+          "code": "fg",
+          "name": "FG"
+        },
+        {
+          "code": "k4",
+          "name": "K4"
+        },
+        {
+          "code": "maestro",
+          "name": "Maestro"
+        },
+        {
+          "code": "mini-1000-pick-up",
+          "name": "Mini 1000 Pick Up"
+        },
+        {
+          "code": "mini-van",
+          "name": "Mini Van"
+        },
+        {
+          "code": "seven",
+          "name": "Seven"
+        }
+      ]
+    },
+    {
+      "code": "austin-morris",
+      "name": "Austin-Morris",
+      "core": false,
+      "kinds": [
+        "van"
+      ],
+      "models": [
+        {
+          "code": "mini",
+          "name": "Mini"
+        }
+      ]
+    },
+    {
+      "code": "barkas",
+      "name": "Barkas",
+      "core": false,
+      "kinds": [
+        "van"
+      ],
+      "models": [
+        {
+          "code": "v-901-2",
+          "name": "V 901/2"
+        }
+      ]
+    },
+    {
+      "code": "bedford",
+      "name": "Bedford",
+      "core": false,
+      "kinds": [
+        "truck",
+        "van"
+      ],
+      "models": [
+        {
+          "code": "ca",
+          "name": "Ca"
+        },
+        {
+          "code": "cf",
+          "name": "CF"
+        },
+        {
+          "code": "cf-350",
+          "name": "CF 350"
+        },
+        {
+          "code": "chevanne",
+          "name": "Chevanne"
+        },
+        {
+          "code": "cjq",
+          "name": "Cjq"
+        },
+        {
+          "code": "efq",
+          "name": "Efq"
+        },
+        {
+          "code": "ejm",
+          "name": "Ejm"
+        },
+        {
+          "code": "elr",
+          "name": "Elr"
+        },
+        {
+          "code": "epr",
+          "name": "Epr"
+        },
+        {
+          "code": "ert",
+          "name": "Ert"
+        },
+        {
+          "code": "j2lc2",
+          "name": "J2LC2"
+        },
+        {
+          "code": "kcc",
+          "name": "Kcc"
+        },
+        {
+          "code": "kdlc",
+          "name": "Kdlc"
+        },
+        {
+          "code": "mlc",
+          "name": "Mlc"
+        },
+        {
+          "code": "ol",
+          "name": "Ol"
+        },
+        {
+          "code": "tk",
+          "name": "TK"
+        },
+        {
+          "code": "tl",
+          "name": "Tl"
+        },
+        {
+          "code": "tm",
+          "name": "Tm"
+        }
+      ]
+    },
+    {
+      "code": "bloomfields",
+      "name": "Bloomfields",
+      "core": false,
+      "kinds": [
+        "van"
+      ],
+      "models": [
+        {
+          "code": "legacy",
+          "name": "Legacy"
+        }
+      ]
+    },
+    {
+      "code": "bmc",
+      "name": "BMC",
+      "core": false,
+      "kinds": [
+        "truck"
+      ],
+      "models": [
+        {
+          "code": "tughra",
+          "name": "Tughra"
+        }
+      ]
+    },
+    {
+      "code": "bremach",
+      "name": "Bremach",
+      "core": false,
+      "kinds": [
+        "van"
+      ],
+      "models": [
+        {
+          "code": "extreme",
+          "name": "Extreme"
+        }
+      ]
+    },
+    {
+      "code": "bucher",
+      "name": "Bucher",
+      "core": false,
+      "kinds": [
+        "truck"
+      ],
+      "models": [
+        {
+          "code": "city",
+          "name": "City"
+        },
+        {
+          "code": "citycat",
+          "name": "Citycat"
+        }
+      ]
+    },
+    {
+      "code": "cadillac",
+      "name": "Cadillac",
+      "core": false,
+      "kinds": [
+        "van"
+      ],
+      "models": [
+        {
+          "code": "escalade",
+          "name": "Escalade"
+        }
+      ]
+    },
+    {
+      "code": "can-am",
+      "name": "Can-Am",
+      "core": false,
+      "kinds": [
+        "van"
+      ],
+      "models": [
+        {
+          "code": "traxter",
+          "name": "Traxter"
+        }
+      ]
+    },
+    {
+      "code": "carrocerias-minda",
+      "name": "Carrocerias Minda",
+      "core": false,
+      "kinds": [
+        "van"
+      ],
+      "models": [
+        {
+          "code": "35c18",
+          "name": "35C18"
+        },
+        {
+          "code": "sprinter",
+          "name": "Sprinter"
+        }
+      ]
+    },
+    {
+      "code": "caselani",
+      "name": "Caselani",
+      "core": false,
+      "kinds": [
+        "van"
+      ],
+      "models": [
+        {
+          "code": "type-h-panelvan",
+          "name": "Type-H Panelvan"
+        }
+      ]
+    },
+    {
+      "code": "caterpillar",
+      "name": "Caterpillar",
+      "core": false,
+      "kinds": [
+        "truck"
+      ],
+      "models": [
+        {
+          "code": "ct610",
+          "name": "CT610"
+        },
+        {
+          "code": "ct630",
+          "name": "CT630"
+        }
+      ]
+    },
+    {
+      "code": "cela",
+      "name": "Cela",
+      "core": false,
+      "kinds": [
+        "van"
+      ],
+      "models": [
+        {
+          "code": "dt-25-i",
+          "name": "Dt-25 I"
+        }
+      ]
+    },
+    {
+      "code": "cenntro",
+      "name": "Cenntro",
+      "core": false,
+      "kinds": [
+        "van"
+      ],
+      "models": [
+        {
+          "code": "logistar",
+          "name": "Logistar"
+        },
+        {
+          "code": "logistar-260",
+          "name": "Logistar 260"
+        },
+        {
+          "code": "metro",
+          "name": "Metro"
+        }
+      ]
+    },
+    {
+      "code": "chevrolet",
+      "name": "Chevrolet",
+      "core": false,
+      "kinds": [
+        "truck",
+        "van"
+      ],
+      "models": [
+        {
+          "code": "1-2-ton-pickup",
+          "name": "1/2 -Ton Pickup"
+        },
+        {
+          "code": "1500-cheyenne",
+          "name": "1500 Cheyenne"
+        },
+        {
+          "code": "1500-pickup",
+          "name": "1500 Pickup"
+        },
+        {
+          "code": "3200-pick-up",
+          "name": "3200 Pick Up"
+        },
+        {
+          "code": "apache",
+          "name": "Apache"
+        },
+        {
+          "code": "apache-31-stepside",
+          "name": "Apache 31 Stepside"
+        },
+        {
+          "code": "apache-32-fleetside",
+          "name": "Apache 32 Fleetside"
+        },
+        {
+          "code": "apache-3200",
+          "name": "Apache 3200"
+        },
+        {
+          "code": "apache-c10",
+          "name": "Apache C10"
+        },
+        {
+          "code": "astro",
+          "name": "Astro"
+        },
+        {
+          "code": "avalanche",
+          "name": "Avalanche"
+        },
+        {
+          "code": "blazer",
+          "name": "Blazer"
+        },
+        {
+          "code": "c-1500-silverado",
+          "name": "C 1500 Silverado"
+        },
+        {
+          "code": "c-10",
+          "name": "C-10"
+        },
+        {
+          "code": "c-20",
+          "name": "C-20"
+        },
+        {
+          "code": "c-2500",
+          "name": "C-2500"
+        },
+        {
+          "code": "c-30",
+          "name": "C-30"
+        },
+        {
+          "code": "c-3500",
+          "name": "C-3500"
+        },
+        {
+          "code": "c-50",
+          "name": "C-50"
+        },
+        {
+          "code": "c10-fleetside-pickup",
+          "name": "C10 Fleetside Pickup"
+        },
+        {
+          "code": "c10-stepside",
+          "name": "C10 Stepside"
+        },
+        {
+          "code": "c15",
+          "name": "C15"
+        },
+        {
+          "code": "c1500",
+          "name": "C1500"
+        },
+        {
+          "code": "c3100",
+          "name": "C3100"
+        },
+        {
+          "code": "cargo",
+          "name": "Cargo"
+        },
+        {
+          "code": "cc31003",
+          "name": "CC31003"
+        },
+        {
+          "code": "chevelle-el-camino",
+          "name": "Chevelle El Camino"
+        },
+        {
+          "code": "chevy-van",
+          "name": "Chevy Van"
+        },
+        {
+          "code": "cheyenne",
+          "name": "Cheyenne"
+        },
+        {
+          "code": "cheyenne-pick-up",
+          "name": "Cheyenne Pick Up"
+        },
+        {
+          "code": "cheyenne-super-10",
+          "name": "Cheyenne Super 10"
+        },
+        {
+          "code": "colorado",
+          "name": "Colorado"
+        },
+        {
+          "code": "custom",
+          "name": "Custom"
+        },
+        {
+          "code": "custom-10",
+          "name": "Custom 10"
+        },
+        {
+          "code": "custom-deluxe",
+          "name": "Custom Deluxe"
+        },
+        {
+          "code": "el-camino",
+          "name": "El Camino"
+        },
+        {
+          "code": "el-camino-pick-up",
+          "name": "El Camino Pick Up"
+        },
+        {
+          "code": "express",
+          "name": "Express"
+        },
+        {
+          "code": "express-2500",
+          "name": "Express 2500"
+        },
+        {
+          "code": "ext-cab-stepside-pu-k1500",
+          "name": "Ext.cab Stepside PU.K1500"
+        }
+      ]
+    },
+    {
+      "code": "chrysler",
+      "name": "Chrysler",
+      "core": false,
+      "kinds": [
+        "truck"
+      ],
+      "models": [
+        {
+          "code": "ram",
+          "name": "Ram"
+        }
+      ]
+    },
+    {
+      "code": "cte",
+      "name": "Cte",
+      "core": false,
+      "kinds": [
+        "van"
+      ],
+      "models": [
+        {
+          "code": "35s14",
+          "name": "35S14"
+        }
+      ]
+    },
+    {
+      "code": "dacia",
+      "name": "Dacia",
+      "core": false,
+      "kinds": [
+        "van"
+      ],
+      "models": [
+        {
+          "code": "dokker",
+          "name": "Dokker"
+        }
+      ]
+    },
+    {
+      "code": "daewoo",
+      "name": "Daewoo",
+      "core": false,
+      "kinds": [
+        "van"
+      ],
+      "models": [
+        {
+          "code": "korando",
+          "name": "Korando"
+        }
+      ]
+    },
+    {
+      "code": "daihatsu",
+      "name": "Daihatsu",
+      "core": false,
+      "kinds": [
+        "van"
+      ],
+      "models": [
+        {
+          "code": "extol",
+          "name": "Extol"
+        },
+        {
+          "code": "f20",
+          "name": "F20"
+        },
+        {
+          "code": "feroza",
+          "name": "Feroza"
+        },
+        {
+          "code": "fourtrak",
+          "name": "Fourtrak"
+        },
+        {
+          "code": "hi-jet",
+          "name": "Hi-Jet"
+        },
+        {
+          "code": "hijet-1000",
+          "name": "Hijet 1000"
+        },
+        {
+          "code": "midget",
+          "name": "Midget"
+        },
+        {
+          "code": "rocky",
+          "name": "Rocky"
+        }
+      ]
+    },
+    {
+      "code": "daimler",
+      "name": "Daimler",
+      "core": false,
+      "kinds": [
+        "truck",
+        "van"
+      ],
+      "models": [
+        {
+          "code": "actros",
+          "name": "Actros"
+        },
+        {
+          "code": "atego",
+          "name": "Atego"
+        },
+        {
+          "code": "sprinter",
+          "name": "Sprinter"
+        }
+      ]
+    },
+    {
+      "code": "daimlerchrysler",
+      "name": "Daimlerchrysler",
+      "core": false,
+      "kinds": [
+        "truck",
+        "van"
+      ],
+      "models": [
+        {
+          "code": "atego",
+          "name": "Atego"
+        },
+        {
+          "code": "grand-cherokee",
+          "name": "Grand Cherokee"
+        },
+        {
+          "code": "ml-270",
+          "name": "ML 270"
+        },
+        {
+          "code": "pt-cruiser",
+          "name": "Pt Cruiser"
+        },
+        {
+          "code": "vario",
+          "name": "Vario"
+        }
+      ]
+    },
+    {
+      "code": "dangel",
+      "name": "Dangel",
+      "core": false,
+      "kinds": [
+        "van"
+      ],
+      "models": [
+        {
+          "code": "berlingo",
+          "name": "Berlingo"
+        },
+        {
+          "code": "boxer",
+          "name": "Boxer"
+        },
+        {
+          "code": "expert",
+          "name": "Expert"
+        },
+        {
+          "code": "jumpy",
+          "name": "Jumpy"
+        },
+        {
+          "code": "partner",
+          "name": "Partner"
+        },
+        {
+          "code": "proace",
+          "name": "Proace"
+        },
+        {
+          "code": "proace-city",
+          "name": "Proace City"
+        },
+        {
+          "code": "scudo",
+          "name": "Scudo"
+        }
+      ]
+    },
+    {
+      "code": "datsun",
+      "name": "Datsun",
+      "core": false,
+      "kinds": [
+        "van"
+      ],
+      "models": [
+        {
+          "code": "patrol",
+          "name": "Patrol"
+        },
+        {
+          "code": "pick-up",
+          "name": "Pick Up"
+        }
+      ]
+    },
+    {
+      "code": "de-soto",
+      "name": "De Soto",
+      "core": false,
+      "kinds": [
+        "truck"
+      ],
+      "models": [
+        {
+          "code": "sc",
+          "name": "Sc"
+        }
+      ]
+    },
+    {
+      "code": "demag",
+      "name": "Demag",
+      "core": false,
+      "kinds": [
+        "truck"
+      ],
+      "models": [
+        {
+          "code": "ac",
+          "name": "Ac"
+        },
+        {
+          "code": "ac100",
+          "name": "AC100"
+        },
+        {
+          "code": "ac120",
+          "name": "AC120"
+        },
+        {
+          "code": "ac160",
+          "name": "AC160"
+        },
+        {
+          "code": "ac40",
+          "name": "AC40"
+        },
+        {
+          "code": "ac50",
+          "name": "AC50"
+        },
+        {
+          "code": "ac500",
+          "name": "AC500"
+        }
+      ]
+    },
+    {
+      "code": "dennis-eagle",
+      "name": "Dennis Eagle",
+      "core": false,
+      "kinds": [
+        "truck"
+      ],
+      "models": [
+        {
+          "code": "elite",
+          "name": "Elite"
+        }
+      ]
+    },
+    {
+      "code": "dfsk",
+      "name": "DFSK",
+      "core": false,
+      "kinds": [
+        "van"
+      ],
+      "models": [
+        {
+          "code": "c31",
+          "name": "C31"
+        },
+        {
+          "code": "c32",
+          "name": "C32"
+        },
+        {
+          "code": "c35",
+          "name": "C35"
+        },
+        {
+          "code": "ec31",
+          "name": "EC31"
+        },
+        {
+          "code": "ec35",
+          "name": "EC35"
+        },
+        {
+          "code": "ec75",
+          "name": "EC75"
+        },
+        {
+          "code": "k01h",
+          "name": "K01H"
+        },
+        {
+          "code": "k01he",
+          "name": "K01He"
+        },
+        {
+          "code": "loadhopper",
+          "name": "Loadhopper"
+        }
+      ]
+    },
+    {
+      "code": "dodge",
+      "name": "Dodge",
+      "core": false,
+      "kinds": [
+        "truck",
+        "van"
+      ],
+      "models": [
+        {
+          "code": "a100",
+          "name": "A100"
+        },
+        {
+          "code": "b250",
+          "name": "B250"
+        },
+        {
+          "code": "d-10",
+          "name": "D 10"
+        },
+        {
+          "code": "d-100",
+          "name": "D 100"
+        },
+        {
+          "code": "d100",
+          "name": "D100"
+        },
+        {
+          "code": "d150",
+          "name": "D150"
+        },
+        {
+          "code": "d200",
+          "name": "D200"
+        },
+        {
+          "code": "d250",
+          "name": "D250"
+        },
+        {
+          "code": "d350",
+          "name": "D350"
+        },
+        {
+          "code": "d500",
+          "name": "D500"
+        },
+        {
+          "code": "dakota",
+          "name": "Dakota"
+        },
+        {
+          "code": "doublecabine",
+          "name": "Doublecabine"
+        },
+        {
+          "code": "durango",
+          "name": "Durango"
+        },
+        {
+          "code": "nitro",
+          "name": "Nitro"
+        },
+        {
+          "code": "pick-up",
+          "name": "Pick Up"
+        },
+        {
+          "code": "power",
+          "name": "Power"
+        },
+        {
+          "code": "power-wagon",
+          "name": "Power Wagon"
+        },
+        {
+          "code": "ram",
+          "name": "Ram"
+        },
+        {
+          "code": "ram-150",
+          "name": "Ram 150"
+        },
+        {
+          "code": "ram-1500",
+          "name": "Ram 1500"
+        },
+        {
+          "code": "ram-2500",
+          "name": "Ram 2500"
+        },
+        {
+          "code": "ram-b250",
+          "name": "Ram B250"
+        },
+        {
+          "code": "ram-b2500",
+          "name": "Ram B2500"
+        },
+        {
+          "code": "ram-charger",
+          "name": "Ram Charger"
+        },
+        {
+          "code": "ram-d100",
+          "name": "Ram D100"
+        },
+        {
+          "code": "ram-slt",
+          "name": "Ram Slt"
+        },
+        {
+          "code": "ram-srt-10",
+          "name": "Ram Srt-10"
+        },
+        {
+          "code": "ram-van",
+          "name": "Ram Van"
+        },
+        {
+          "code": "sportsman",
+          "name": "Sportsman"
+        },
+        {
+          "code": "srt-10",
+          "name": "Srt-10"
+        },
+        {
+          "code": "van-200",
+          "name": "Van 200"
+        },
+        {
+          "code": "w-250",
+          "name": "W 250"
+        },
+        {
+          "code": "w200",
+          "name": "W200"
+        },
+        {
+          "code": "w250",
+          "name": "W250"
+        },
+        {
+          "code": "w350",
+          "name": "W350"
+        },
+        {
+          "code": "wc",
+          "name": "Wc"
+        },
+        {
+          "code": "wc51",
+          "name": "WC51"
+        },
+        {
+          "code": "wc52",
+          "name": "WC52"
+        },
+        {
+          "code": "wc62",
+          "name": "WC62"
+        },
+        {
+          "code": "wd-15",
+          "name": "Wd-15"
+        }
+      ]
+    },
+    {
+      "code": "dr",
+      "name": "DR",
+      "core": false,
+      "kinds": [
+        "van"
+      ],
+      "models": [
+        {
+          "code": "pk8",
+          "name": "PK8"
+        }
+      ]
+    },
+    {
+      "code": "eder-gmbh",
+      "name": "Eder Gmbh",
+      "core": false,
+      "kinds": [
+        "truck"
+      ],
+      "models": [
+        {
+          "code": "algema",
+          "name": "Algema"
+        }
+      ]
+    },
+    {
+      "code": "edward-davies",
+      "name": "Edward Davies",
+      "core": false,
+      "kinds": [
+        "van"
+      ],
+      "models": [
+        {
+          "code": "ranger",
+          "name": "Ranger"
+        },
+        {
+          "code": "transit-custom",
+          "name": "Transit Custom"
+        }
+      ]
+    },
+    {
+      "code": "edward-davies-commercials",
+      "name": "Edward Davies Commercials",
+      "core": false,
+      "kinds": [
+        "van"
+      ],
+      "models": [
+        {
+          "code": "transit-custom",
+          "name": "Transit Custom"
+        }
+      ]
+    },
+    {
+      "code": "equi-trek",
+      "name": "Equi-Trek",
+      "core": false,
+      "kinds": [
+        "van"
+      ],
+      "models": [
+        {
+          "code": "sonic",
+          "name": "Sonic"
+        }
+      ]
+    },
+    {
+      "code": "erf",
+      "name": "Erf",
+      "core": false,
+      "kinds": [
+        "truck"
+      ],
+      "models": [
+        {
+          "code": "ec12",
+          "name": "EC12"
+        },
+        {
+          "code": "ecs",
+          "name": "ECS"
+        }
+      ]
+    },
+    {
+      "code": "esagono-energia",
+      "name": "Esagono Energia",
+      "core": false,
+      "kinds": [
+        "van"
+      ],
+      "models": [
+        {
+          "code": "gastone",
+          "name": "Gastone"
+        }
+      ]
+    },
+    {
+      "code": "etalmobil",
+      "name": "Etalmobil",
+      "core": false,
+      "kinds": [
+        "truck"
+      ],
+      "models": [
+        {
+          "code": "e3010",
+          "name": "E3010"
+        }
+      ]
+    },
+    {
+      "code": "etesia",
+      "name": "Etesia",
+      "core": false,
+      "kinds": [
+        "van"
+      ],
+      "models": [
+        {
+          "code": "et-lander",
+          "name": "Et Lander"
+        }
+      ]
+    },
+    {
+      "code": "evo",
+      "name": "Evo",
+      "core": false,
+      "kinds": [
+        "van"
+      ],
+      "models": [
+        {
+          "code": "cross4",
+          "name": "Cross4"
+        }
+      ]
+    },
+    {
+      "code": "evum-motors",
+      "name": "Evum Motors",
+      "core": false,
+      "kinds": [
+        "van"
+      ],
+      "models": [
+        {
+          "code": "acar",
+          "name": "Acar"
+        }
+      ]
+    },
+    {
+      "code": "farizon",
+      "name": "Farizon",
+      "core": false,
+      "kinds": [
+        "van"
+      ],
+      "models": [
+        {
+          "code": "supervan",
+          "name": "Supervan"
+        },
+        {
+          "code": "sv",
+          "name": "Sv"
+        },
+        {
+          "code": "v7e",
+          "name": "V7E"
+        }
+      ]
+    },
+    {
+      "code": "faun",
+      "name": "Faun",
+      "core": false,
+      "kinds": [
+        "truck"
+      ],
+      "models": [
+        {
+          "code": "atf",
+          "name": "Atf"
+        }
+      ]
+    },
+    {
+      "code": "faun-umwelttechnik",
+      "name": "Faun Umwelttechnik",
+      "core": false,
+      "kinds": [
+        "truck"
+      ],
+      "models": [
+        {
+          "code": "variopress",
+          "name": "Variopress"
+        }
+      ]
+    },
+    {
+      "code": "fleur-de-lys",
+      "name": "Fleur De Lys",
+      "core": false,
+      "kinds": [
+        "van"
+      ],
+      "models": [
+        {
+          "code": "calvetta-350",
+          "name": "Calvetta 350"
+        },
+        {
+          "code": "newark",
+          "name": "Newark"
+        }
+      ]
+    },
+    {
+      "code": "foden",
+      "name": "Foden",
+      "core": false,
+      "kinds": [
+        "truck"
+      ],
+      "models": [
+        {
+          "code": "alpha-3000",
+          "name": "Alpha 3000"
+        },
+        {
+          "code": "s104",
+          "name": "S104"
+        },
+        {
+          "code": "s106",
+          "name": "S106"
+        }
+      ]
+    },
+    {
+      "code": "fordson",
+      "name": "Fordson",
+      "core": false,
+      "kinds": [
+        "truck"
+      ],
+      "models": [
+        {
+          "code": "wot",
+          "name": "Wot"
+        }
+      ]
+    },
+    {
+      "code": "foton",
+      "name": "Foton",
+      "core": false,
+      "kinds": [
+        "truck",
+        "van"
+      ],
+      "models": [
+        {
+          "code": "auman",
+          "name": "Auman"
+        },
+        {
+          "code": "aumark",
+          "name": "Aumark"
+        },
+        {
+          "code": "etunland",
+          "name": "eTunland"
+        },
+        {
+          "code": "iblue",
+          "name": "iBlue"
+        },
+        {
+          "code": "tunland",
+          "name": "Tunland"
+        }
+      ]
+    },
+    {
+      "code": "freight-rover",
+      "name": "Freight Rover",
+      "core": false,
+      "kinds": [
+        "van"
+      ],
+      "models": [
+        {
+          "code": "sherpa",
+          "name": "Sherpa"
+        }
+      ]
+    },
+    {
+      "code": "freightliner",
+      "name": "Freightliner",
+      "core": false,
+      "kinds": [
+        "truck"
+      ],
+      "models": [
+        {
+          "code": "argosy",
+          "name": "Argosy"
+        },
+        {
+          "code": "cascadia",
+          "name": "Cascadia"
+        },
+        {
+          "code": "century-class",
+          "name": "Century Class"
+        },
+        {
+          "code": "columbia",
+          "name": "Columbia"
+        },
+        {
+          "code": "coronado",
+          "name": "Coronado"
+        },
+        {
+          "code": "fl",
+          "name": "FL"
+        },
+        {
+          "code": "fld",
+          "name": "Fld"
+        },
+        {
+          "code": "flt",
+          "name": "Flt"
+        },
+        {
+          "code": "utilimaster",
+          "name": "Utilimaster"
+        }
+      ]
+    },
+    {
+      "code": "furcar",
+      "name": "Furcar",
+      "core": false,
+      "kinds": [
+        "van"
+      ],
+      "models": [
+        {
+          "code": "crafter",
+          "name": "Crafter"
+        }
+      ]
+    },
+    {
+      "code": "garia",
+      "name": "Garia",
+      "core": false,
+      "kinds": [
+        "van"
+      ],
+      "models": [
+        {
+          "code": "club-car-urban",
+          "name": "Club Car Urban"
+        },
+        {
+          "code": "club-car-urban-n1-l",
+          "name": "Club Car Urban N1 L"
+        }
+      ]
+    },
+    {
+      "code": "ginaf",
+      "name": "Ginaf",
+      "core": false,
+      "kinds": [
+        "truck"
+      ],
+      "models": [
+        {
+          "code": "x4241s",
+          "name": "X4241S"
+        },
+        {
+          "code": "x4446",
+          "name": "X4446"
+        },
+        {
+          "code": "x6",
+          "name": "X6"
+        }
+      ]
+    },
+    {
+      "code": "giotti-victoria",
+      "name": "Giotti Victoria",
+      "core": false,
+      "kinds": [
+        "van"
+      ],
+      "models": [
+        {
+          "code": "gladiator",
+          "name": "Gladiator"
+        }
+      ]
+    },
+    {
+      "code": "gmc",
+      "name": "GMC",
+      "core": false,
+      "kinds": [
+        "truck",
+        "van"
+      ],
+      "models": [
+        {
+          "code": "1500-custom",
+          "name": "1500 Custom"
+        },
+        {
+          "code": "avalanche",
+          "name": "Avalanche"
+        },
+        {
+          "code": "c25",
+          "name": "C25"
+        },
+        {
+          "code": "caballero",
+          "name": "Caballero"
+        },
+        {
+          "code": "cckw",
+          "name": "Cckw"
+        },
+        {
+          "code": "coach",
+          "name": "Coach"
+        },
+        {
+          "code": "hummer",
+          "name": "Hummer"
+        },
+        {
+          "code": "k2500",
+          "name": "K2500"
+        },
+        {
+          "code": "panel-van",
+          "name": "Panel Van"
+        },
+        {
+          "code": "pick-up",
+          "name": "Pick-Up"
+        },
+        {
+          "code": "savana",
+          "name": "Savana"
+        },
+        {
+          "code": "sierra",
+          "name": "Sierra"
+        },
+        {
+          "code": "sierra-1500",
+          "name": "Sierra 1500"
+        },
+        {
+          "code": "sierra-at4",
+          "name": "Sierra AT4"
+        },
+        {
+          "code": "sierra-c1500",
+          "name": "Sierra C1500"
+        },
+        {
+          "code": "sierra-classic",
+          "name": "Sierra Classic"
+        },
+        {
+          "code": "sierra-denali",
+          "name": "Sierra Denali"
+        },
+        {
+          "code": "sierra-grande-1500",
+          "name": "Sierra Grande 1500"
+        },
+        {
+          "code": "sierra-k1500",
+          "name": "Sierra K1500"
+        },
+        {
+          "code": "silverado",
+          "name": "Silverado"
+        },
+        {
+          "code": "sprint",
+          "name": "Sprint"
+        },
+        {
+          "code": "stepside-pick-up",
+          "name": "Stepside Pick Up"
+        },
+        {
+          "code": "syclone",
+          "name": "Syclone"
+        },
+        {
+          "code": "truck",
+          "name": "Truck"
+        },
+        {
+          "code": "vandura",
+          "name": "Vandura"
+        },
+        {
+          "code": "vandura-2500",
+          "name": "Vandura 2500"
+        }
+      ]
+    },
+    {
+      "code": "goupil",
+      "name": "Goupil",
+      "core": false,
+      "kinds": [
+        "van"
+      ],
+      "models": [
+        {
+          "code": "g3",
+          "name": "G3"
+        },
+        {
+          "code": "g4",
+          "name": "G4"
+        },
+        {
+          "code": "g4l",
+          "name": "G4L"
+        },
+        {
+          "code": "g6",
+          "name": "G6"
+        }
+      ]
+    },
+    {
+      "code": "great-wall",
+      "name": "Great Wall",
+      "core": false,
+      "kinds": [
+        "van"
+      ],
+      "models": [
+        {
+          "code": "cannon",
+          "name": "Cannon"
+        },
+        {
+          "code": "poer-300",
+          "name": "Poer 300"
+        },
+        {
+          "code": "sailor",
+          "name": "Sailor"
+        },
+        {
+          "code": "steed",
+          "name": "Steed"
+        },
+        {
+          "code": "v200",
+          "name": "V200"
+        },
+        {
+          "code": "v240",
+          "name": "V240"
+        }
+      ]
+    },
+    {
+      "code": "grove",
+      "name": "Grove",
+      "core": false,
+      "kinds": [
+        "truck"
+      ],
+      "models": [
+        {
+          "code": "gmk",
+          "name": "Gmk"
+        }
+      ]
+    },
+    {
+      "code": "haller-benelux",
+      "name": "Haller Benelux",
+      "core": false,
+      "kinds": [
+        "truck"
+      ],
+      "models": [
+        {
+          "code": "magnum",
+          "name": "Magnum"
+        }
+      ]
+    },
+    {
+      "code": "hanomag",
+      "name": "Hanomag",
+      "core": false,
+      "kinds": [
+        "truck"
+      ],
+      "models": [
+        {
+          "code": "kurier",
+          "name": "Kurier"
+        }
+      ]
+    },
+    {
+      "code": "hino",
+      "name": "Hino",
+      "core": false,
+      "kinds": [
+        "truck"
+      ],
+      "models": [
+        {
+          "code": "fc",
+          "name": "FC"
+        },
+        {
+          "code": "fd",
+          "name": "FD"
+        },
+        {
+          "code": "fe",
+          "name": "FE"
+        },
+        {
+          "code": "fg",
+          "name": "FG"
+        },
+        {
+          "code": "fl",
+          "name": "FL"
+        },
+        {
+          "code": "fm",
+          "name": "FM"
+        },
+        {
+          "code": "fr",
+          "name": "FR"
+        },
+        {
+          "code": "fs",
+          "name": "FS"
+        },
+        {
+          "code": "ft",
+          "name": "FT"
+        },
+        {
+          "code": "fy",
+          "name": "FY"
+        },
+        {
+          "code": "gd",
+          "name": "GD"
+        },
+        {
+          "code": "gh",
+          "name": "GH"
+        },
+        {
+          "code": "gt",
+          "name": "GT"
+        },
+        {
+          "code": "ranger",
+          "name": "Ranger"
+        },
+        {
+          "code": "sh",
+          "name": "SH"
+        },
+        {
+          "code": "ss",
+          "name": "SS"
+        }
+      ]
+    },
+    {
+      "code": "holden",
+      "name": "Holden",
+      "core": false,
+      "kinds": [
+        "van"
+      ],
+      "models": [
+        {
+          "code": "combo",
+          "name": "Combo"
+        }
+      ]
+    },
+    {
+      "code": "honda",
+      "name": "Honda",
+      "core": false,
+      "kinds": [
+        "van"
+      ],
+      "models": [
+        {
+          "code": "acty",
+          "name": "Acty"
+        },
+        {
+          "code": "acty-truck",
+          "name": "Acty Truck"
+        },
+        {
+          "code": "ridgeline",
+          "name": "Ridgeline"
+        }
+      ]
+    },
+    {
+      "code": "hsv",
+      "name": "HSV",
+      "core": false,
+      "kinds": [
+        "van"
+      ],
+      "models": [
+        {
+          "code": "maloo",
+          "name": "Maloo"
+        }
+      ]
+    },
+    {
+      "code": "humbaur",
+      "name": "Humbaur",
+      "core": false,
+      "kinds": [
+        "van"
+      ],
+      "models": [
+        {
+          "code": "master-flexbox",
+          "name": "Master Flexbox"
+        },
+        {
+          "code": "renault-master-flexbox",
+          "name": "Renault Master Flexbox"
+        }
+      ]
+    },
+    {
+      "code": "hummer",
+      "name": "Hummer",
+      "core": false,
+      "kinds": [
+        "truck",
+        "van"
+      ],
+      "models": [
+        {
+          "code": "h1",
+          "name": "H1"
+        },
+        {
+          "code": "h2",
+          "name": "H2"
+        },
+        {
+          "code": "h3",
+          "name": "H3"
+        },
+        {
+          "code": "hmc",
+          "name": "Hmc"
+        }
+      ]
+    },
+    {
+      "code": "hvm",
+      "name": "Hvm",
+      "core": false,
+      "kinds": [
+        "van"
+      ],
+      "models": [
+        {
+          "code": "kr-master-horsebox",
+          "name": "Kr-Master Horsebox"
+        },
+        {
+          "code": "master-box",
+          "name": "Master Box"
+        },
+        {
+          "code": "master-horsebox",
+          "name": "Master Horsebox"
+        }
+      ]
+    },
+    {
+      "code": "hydrema",
+      "name": "Hydrema",
+      "core": false,
+      "kinds": [
+        "truck"
+      ],
+      "models": []
+    },
+    {
+      "code": "hyundai",
+      "name": "Hyundai",
+      "core": false,
+      "kinds": [
+        "truck",
+        "van"
+      ],
+      "models": [
+        {
+          "code": "galloper",
+          "name": "Galloper"
+        },
+        {
+          "code": "h-1",
+          "name": "H-1"
+        },
+        {
+          "code": "h100",
+          "name": "H100"
+        },
+        {
+          "code": "h200",
+          "name": "H200"
+        },
+        {
+          "code": "h350",
+          "name": "H350"
+        },
+        {
+          "code": "iload",
+          "name": "Iload"
+        },
+        {
+          "code": "mighty",
+          "name": "Mighty"
+        },
+        {
+          "code": "pavise",
+          "name": "Pavise"
+        }
+      ]
+    },
+    {
+      "code": "iav",
+      "name": "Iav",
+      "core": false,
+      "kinds": [
+        "van"
+      ],
+      "models": [
+        {
+          "code": "transporter",
+          "name": "Transporter"
+        }
+      ]
+    },
+    {
+      "code": "ineos",
+      "name": "INEOS",
+      "core": false,
+      "kinds": [
+        "van"
+      ],
+      "models": [
+        {
+          "code": "grenadier",
+          "name": "Grenadier"
+        }
+      ]
+    },
+    {
+      "code": "international",
+      "name": "International",
+      "core": false,
+      "kinds": [
+        "truck",
+        "van"
+      ],
+      "models": [
+        {
+          "code": "9200i",
+          "name": "9200i"
+        },
+        {
+          "code": "9900i",
+          "name": "9900i"
+        },
+        {
+          "code": "acco",
+          "name": "ACCO"
+        },
+        {
+          "code": "eagle",
+          "name": "Eagle"
+        },
+        {
+          "code": "kb-1",
+          "name": "Kb-1"
+        },
+        {
+          "code": "l110",
+          "name": "L110"
+        },
+        {
+          "code": "loadstar",
+          "name": "Loadstar"
+        },
+        {
+          "code": "prostar",
+          "name": "Prostar"
+        },
+        {
+          "code": "s-line",
+          "name": "S-Line"
+        },
+        {
+          "code": "scout",
+          "name": "Scout"
+        },
+        {
+          "code": "t-line",
+          "name": "T-Line"
+        },
+        {
+          "code": "transtar",
+          "name": "Transtar"
+        }
+      ]
+    },
+    {
+      "code": "its-system",
+      "name": "Its System",
+      "core": false,
+      "kinds": [
+        "van"
+      ],
+      "models": [
+        {
+          "code": "master",
+          "name": "Master"
+        },
+        {
+          "code": "sprinter",
+          "name": "Sprinter"
+        }
+      ]
+    },
+    {
+      "code": "jac",
+      "name": "JAC",
+      "core": false,
+      "kinds": [
+        "van"
+      ],
+      "models": [
+        {
+          "code": "t9",
+          "name": "T9"
+        }
+      ]
+    },
+    {
+      "code": "jcb",
+      "name": "JCB",
+      "core": false,
+      "kinds": [
+        "truck",
+        "van"
+      ],
+      "models": [
+        {
+          "code": "3sth",
+          "name": "3STH"
+        },
+        {
+          "code": "6ft",
+          "name": "6FT"
+        },
+        {
+          "code": "6st",
+          "name": "6ST"
+        },
+        {
+          "code": "6tft",
+          "name": "6TFT"
+        },
+        {
+          "code": "6tst",
+          "name": "6TST"
+        },
+        {
+          "code": "9ft",
+          "name": "9FT"
+        },
+        {
+          "code": "9tft",
+          "name": "9TFT"
+        }
+      ]
+    },
+    {
+      "code": "jeep",
+      "name": "Jeep",
+      "core": false,
+      "kinds": [
+        "van"
+      ],
+      "models": [
+        {
+          "code": "cherokee-sport",
+          "name": "Cherokee Sport"
+        },
+        {
+          "code": "cj-7",
+          "name": "CJ-7"
+        },
+        {
+          "code": "comanche",
+          "name": "Comanche"
+        },
+        {
+          "code": "gladiator",
+          "name": "Gladiator"
+        },
+        {
+          "code": "gladiator-rubicon",
+          "name": "Gladiator Rubicon"
+        },
+        {
+          "code": "j20",
+          "name": "J20"
+        },
+        {
+          "code": "j20-truck-27-7600",
+          "name": "J20 Truck 27/7600"
+        },
+        {
+          "code": "renegade-van",
+          "name": "Renegade Van"
+        },
+        {
+          "code": "wrangler-unlimited",
+          "name": "Wrangler Unlimited"
+        }
+      ]
+    },
+    {
+      "code": "kawasaki",
+      "name": "Kawasaki",
+      "core": false,
+      "kinds": [
+        "van"
+      ],
+      "models": [
+        {
+          "code": "kaf",
+          "name": "Kaf"
+        },
+        {
+          "code": "kdf",
+          "name": "Kdf"
+        },
+        {
+          "code": "kdt",
+          "name": "Kdt"
+        }
+      ]
+    },
+    {
+      "code": "kenworth",
+      "name": "Kenworth",
+      "core": false,
+      "kinds": [
+        "truck"
+      ],
+      "models": [
+        {
+          "code": "c500",
+          "name": "C500"
+        },
+        {
+          "code": "c509",
+          "name": "C509"
+        },
+        {
+          "code": "k100",
+          "name": "K100"
+        },
+        {
+          "code": "k100e",
+          "name": "K100E"
+        },
+        {
+          "code": "k100g",
+          "name": "K100G"
+        },
+        {
+          "code": "k104",
+          "name": "K104"
+        },
+        {
+          "code": "k108",
+          "name": "K108"
+        },
+        {
+          "code": "k125",
+          "name": "K125"
+        },
+        {
+          "code": "k200",
+          "name": "K200"
+        },
+        {
+          "code": "k220",
+          "name": "K220"
+        },
+        {
+          "code": "t300",
+          "name": "T300"
+        },
+        {
+          "code": "t350",
+          "name": "T350"
+        },
+        {
+          "code": "t358",
+          "name": "T358"
+        },
+        {
+          "code": "t359",
+          "name": "T359"
+        },
+        {
+          "code": "t360",
+          "name": "T360"
+        },
+        {
+          "code": "t388",
+          "name": "T388"
+        },
+        {
+          "code": "t400",
+          "name": "T400"
+        },
+        {
+          "code": "t401",
+          "name": "T401"
+        },
+        {
+          "code": "t403",
+          "name": "T403"
+        },
+        {
+          "code": "t404",
+          "name": "T404"
+        },
+        {
+          "code": "t408",
+          "name": "T408"
+        },
+        {
+          "code": "t409",
+          "name": "T409"
+        },
+        {
+          "code": "t410",
+          "name": "T410"
+        },
+        {
+          "code": "t440",
+          "name": "T440"
+        },
+        {
+          "code": "t450",
+          "name": "T450"
+        },
+        {
+          "code": "t480",
+          "name": "T480"
+        },
+        {
+          "code": "t600",
+          "name": "T600"
+        },
+        {
+          "code": "t601",
+          "name": "T601"
+        },
+        {
+          "code": "t604",
+          "name": "T604"
+        },
+        {
+          "code": "t608",
+          "name": "T608"
+        },
+        {
+          "code": "t609",
+          "name": "T609"
+        },
+        {
+          "code": "t610",
+          "name": "T610"
+        },
+        {
+          "code": "t650",
+          "name": "T650"
+        },
+        {
+          "code": "t658",
+          "name": "T658"
+        },
+        {
+          "code": "t659",
+          "name": "T659"
+        },
+        {
+          "code": "t900",
+          "name": "T900"
+        },
+        {
+          "code": "t904",
+          "name": "T904"
+        },
+        {
+          "code": "t908",
+          "name": "T908"
+        },
+        {
+          "code": "t909",
+          "name": "T909"
+        },
+        {
+          "code": "t950",
+          "name": "T950"
+        }
+      ]
+    },
+    {
+      "code": "kerstner",
+      "name": "Kerstner",
+      "core": false,
+      "kinds": [
+        "van"
+      ],
+      "models": [
+        {
+          "code": "kuhlsprinter",
+          "name": "Kuhlsprinter"
+        },
+        {
+          "code": "kuhlvito",
+          "name": "Kühlvito"
+        }
+      ]
+    },
+    {
+      "code": "kgm",
+      "name": "KGM",
+      "core": false,
+      "kinds": [
+        "van"
+      ],
+      "models": [
+        {
+          "code": "musso",
+          "name": "Musso"
+        },
+        {
+          "code": "musso-ev",
+          "name": "Musso EV"
+        },
+        {
+          "code": "rexton",
+          "name": "Rexton"
+        },
+        {
+          "code": "torres-evx",
+          "name": "Torres Evx"
+        }
+      ]
+    },
+    {
+      "code": "kia",
+      "name": "Kia",
+      "core": false,
+      "kinds": [
+        "van"
+      ],
+      "models": [
+        {
+          "code": "ceres",
+          "name": "Ceres"
+        },
+        {
+          "code": "k2500",
+          "name": "K2500"
+        },
+        {
+          "code": "k2700",
+          "name": "K2700"
+        },
+        {
+          "code": "k2900",
+          "name": "K2900"
+        },
+        {
+          "code": "pv5",
+          "name": "PV5"
+        }
+      ]
+    },
+    {
+      "code": "klubb-france",
+      "name": "Klubb France",
+      "core": false,
+      "kinds": [
+        "van"
+      ],
+      "models": [
+        {
+          "code": "master",
+          "name": "Master"
+        }
+      ]
+    },
+    {
+      "code": "krismar",
+      "name": "Krismar",
+      "core": false,
+      "kinds": [
+        "truck"
+      ],
+      "models": [
+        {
+          "code": "elite",
+          "name": "Elite"
+        },
+        {
+          "code": "kr",
+          "name": "Kr"
+        }
+      ]
+    },
+    {
+      "code": "kubota",
+      "name": "Kubota",
+      "core": false,
+      "kinds": [
+        "van"
+      ],
+      "models": [
+        {
+          "code": "rtv-series",
+          "name": "Rtv Series"
+        }
+      ]
+    },
+    {
+      "code": "lamar",
+      "name": "Lamar",
+      "core": false,
+      "kinds": [
+        "truck",
+        "van"
+      ],
+      "models": [
+        {
+          "code": "sprinter",
+          "name": "Sprinter"
+        },
+        {
+          "code": "sprinter-lamar",
+          "name": "Sprinter/Lamar"
+        }
+      ]
+    },
+    {
+      "code": "land-rover",
+      "name": "Land Rover",
+      "core": false,
+      "kinds": [
+        "truck",
+        "van"
+      ],
+      "models": [
+        {
+          "code": "defender",
+          "name": "Defender"
+        },
+        {
+          "code": "discovery",
+          "name": "Discovery"
+        },
+        {
+          "code": "fc",
+          "name": "FC"
+        },
+        {
+          "code": "freelander",
+          "name": "Freelander"
+        },
+        {
+          "code": "ld",
+          "name": "Ld"
+        }
+      ]
+    },
+    {
+      "code": "ldv",
+      "name": "LDV",
+      "core": false,
+      "kinds": [
+        "truck",
+        "van"
+      ],
+      "models": [
+        {
+          "code": "200-series",
+          "name": "200 Series"
+        },
+        {
+          "code": "400-series",
+          "name": "400 Series"
+        },
+        {
+          "code": "convoy",
+          "name": "Convoy"
+        },
+        {
+          "code": "cub",
+          "name": "Cub"
+        },
+        {
+          "code": "deliver-7",
+          "name": "Deliver 7"
+        },
+        {
+          "code": "deliver-9",
+          "name": "Deliver 9"
+        },
+        {
+          "code": "g10",
+          "name": "G10"
+        },
+        {
+          "code": "maxus",
+          "name": "Maxus"
+        },
+        {
+          "code": "t60",
+          "name": "T60"
+        },
+        {
+          "code": "v80",
+          "name": "V80"
+        }
+      ]
+    },
+    {
+      "code": "levc",
+      "name": "LEVC",
+      "core": false,
+      "kinds": [
+        "van"
+      ],
+      "models": [
+        {
+          "code": "vn5",
+          "name": "VN5"
+        }
+      ]
+    },
+    {
+      "code": "leyland",
+      "name": "Leyland",
+      "core": false,
+      "kinds": [
+        "truck"
+      ],
+      "models": [
+        {
+          "code": "freighter",
+          "name": "Freighter"
+        },
+        {
+          "code": "hippo",
+          "name": "Hippo"
+        },
+        {
+          "code": "roadrunner",
+          "name": "Roadrunner"
+        },
+        {
+          "code": "roadtrain",
+          "name": "Roadtrain"
+        }
+      ]
+    },
+    {
+      "code": "leyland-cars",
+      "name": "Leyland Cars",
+      "core": false,
+      "kinds": [
+        "van"
+      ],
+      "models": [
+        {
+          "code": "mini",
+          "name": "Mini"
+        }
+      ]
+    },
+    {
+      "code": "leyland-daf",
+      "name": "Leyland Daf",
+      "core": false,
+      "kinds": [
+        "truck",
+        "van"
+      ],
+      "models": []
+    },
+    {
+      "code": "liebherr",
+      "name": "Liebherr",
+      "core": false,
+      "kinds": [
+        "truck"
+      ],
+      "models": [
+        {
+          "code": "ltc",
+          "name": "Ltc"
+        },
+        {
+          "code": "ltm",
+          "name": "Ltm"
+        },
+        {
+          "code": "mk140",
+          "name": "MK140"
+        },
+        {
+          "code": "mk88",
+          "name": "MK88"
+        },
+        {
+          "code": "utm",
+          "name": "Utm"
+        }
+      ]
+    },
+    {
+      "code": "lincoln",
+      "name": "Lincoln",
+      "core": false,
+      "kinds": [
+        "truck"
+      ],
+      "models": [
+        {
+          "code": "navigator",
+          "name": "Navigator"
+        }
+      ]
+    },
+    {
+      "code": "mack",
+      "name": "Mack",
+      "core": false,
+      "kinds": [
+        "truck"
+      ],
+      "models": [
+        {
+          "code": "anthem",
+          "name": "Anthem"
+        },
+        {
+          "code": "b-series",
+          "name": "B Series"
+        },
+        {
+          "code": "ch",
+          "name": "CH"
+        },
+        {
+          "code": "ch613",
+          "name": "CH613"
+        },
+        {
+          "code": "fleetliner",
+          "name": "Fleetliner"
+        },
+        {
+          "code": "granite",
+          "name": "Granite"
+        },
+        {
+          "code": "metroliner",
+          "name": "Metroliner"
+        },
+        {
+          "code": "midlum",
+          "name": "Midlum"
+        },
+        {
+          "code": "premium",
+          "name": "Premium"
+        },
+        {
+          "code": "qantum",
+          "name": "Qantum"
+        },
+        {
+          "code": "r-series",
+          "name": "R Series"
+        },
+        {
+          "code": "superliner",
+          "name": "Superliner"
+        },
+        {
+          "code": "titan",
+          "name": "Titan"
+        },
+        {
+          "code": "trident",
+          "name": "Trident"
+        },
+        {
+          "code": "valueliner",
+          "name": "Valueliner"
+        },
+        {
+          "code": "vision",
+          "name": "Vision"
+        }
+      ]
+    },
+    {
+      "code": "magirus-deutz",
+      "name": "Magirus-Deutz",
+      "core": false,
+      "kinds": [
+        "truck"
+      ],
+      "models": [
+        {
+          "code": "deutz",
+          "name": "Deutz"
+        }
+      ]
+    },
+    {
+      "code": "mahindra",
+      "name": "Mahindra",
+      "core": false,
+      "kinds": [
+        "van"
+      ],
+      "models": [
+        {
+          "code": "genio",
+          "name": "Genio"
+        },
+        {
+          "code": "pik-up",
+          "name": "Pik-Up"
+        }
+      ]
+    },
+    {
+      "code": "mazda",
+      "name": "Mazda",
+      "core": false,
+      "kinds": [
+        "truck",
+        "van"
+      ],
+      "models": [
+        {
+          "code": "b-series",
+          "name": "B Series"
+        },
+        {
+          "code": "b2000",
+          "name": "B2000"
+        },
+        {
+          "code": "b2200",
+          "name": "B2200"
+        },
+        {
+          "code": "b2500",
+          "name": "B2500"
+        },
+        {
+          "code": "bt50",
+          "name": "BT50"
+        },
+        {
+          "code": "e-series",
+          "name": "E Series"
+        },
+        {
+          "code": "titan",
+          "name": "Titan"
+        }
+      ]
+    },
+    {
+      "code": "mecalac",
+      "name": "Mecalac",
+      "core": false,
+      "kinds": [
+        "truck"
+      ],
+      "models": [
+        {
+          "code": "mdx",
+          "name": "Mdx"
+        },
+        {
+          "code": "revotruck",
+          "name": "Revotruck"
+        },
+        {
+          "code": "ta",
+          "name": "Ta"
+        }
+      ]
+    },
+    {
+      "code": "mg",
+      "name": "MG",
+      "core": false,
+      "kinds": [
+        "van"
+      ],
+      "models": [
+        {
+          "code": "extender",
+          "name": "Extender"
+        }
+      ]
+    },
+    {
+      "code": "mini",
+      "name": "Mini",
+      "core": false,
+      "kinds": [
+        "van"
+      ],
+      "models": [
+        {
+          "code": "1000-van",
+          "name": "1000 Van"
+        },
+        {
+          "code": "clubvan",
+          "name": "Clubvan"
+        }
+      ]
+    },
+    {
+      "code": "mitsubishi",
+      "name": "Mitsubishi",
+      "core": false,
+      "kinds": [
+        "truck",
+        "van"
+      ],
+      "models": [
+        {
+          "code": "canter",
+          "name": "Canter"
+        },
+        {
+          "code": "canter-3c13",
+          "name": "Canter 3C13"
+        },
+        {
+          "code": "canter-3s13",
+          "name": "Canter 3S13"
+        },
+        {
+          "code": "express",
+          "name": "Express"
+        },
+        {
+          "code": "l200",
+          "name": "L200"
+        },
+        {
+          "code": "l300",
+          "name": "L300"
+        },
+        {
+          "code": "minicab",
+          "name": "Minicab"
+        },
+        {
+          "code": "montero",
+          "name": "Montero"
+        },
+        {
+          "code": "pajero",
+          "name": "Pajero"
+        },
+        {
+          "code": "pajero-sport",
+          "name": "Pajero Sport"
+        },
+        {
+          "code": "shogun",
+          "name": "Shogun"
+        },
+        {
+          "code": "triton",
+          "name": "Triton"
+        }
+      ]
+    },
+    {
+      "code": "monza",
+      "name": "Monza",
+      "core": false,
+      "kinds": [
+        "truck"
+      ],
+      "models": [
+        {
+          "code": "atego",
+          "name": "Atego"
+        },
+        {
+          "code": "tgl",
+          "name": "TGL"
+        }
+      ]
+    },
+    {
+      "code": "morris",
+      "name": "Morris",
+      "core": false,
+      "kinds": [
+        "van"
+      ],
+      "models": [
+        {
+          "code": "6cwt",
+          "name": "6CWT"
+        },
+        {
+          "code": "mini",
+          "name": "Mini"
+        },
+        {
+          "code": "mini-850-pick-up",
+          "name": "Mini 850 Pick-Up"
+        }
+      ]
+    },
+    {
+      "code": "movex",
+      "name": "Movex",
+      "core": false,
+      "kinds": [
+        "van"
+      ],
+      "models": [
+        {
+          "code": "35s14",
+          "name": "35S14"
+        }
+      ]
+    },
+    {
+      "code": "multicar",
+      "name": "Multicar",
+      "core": false,
+      "kinds": [
+        "truck"
+      ],
+      "models": [
+        {
+          "code": "m30",
+          "name": "M30"
+        }
+      ]
+    },
+    {
+      "code": "nextem",
+      "name": "Nextem",
+      "core": false,
+      "kinds": [
+        "van"
+      ],
+      "models": [
+        {
+          "code": "orca",
+          "name": "Orca"
+        }
+      ]
+    },
+    {
+      "code": "nilsson",
+      "name": "Nilsson",
+      "core": false,
+      "kinds": [
+        "van"
+      ],
+      "models": [
+        {
+          "code": "v70-ambulance",
+          "name": "V70 Ambulance"
+        }
+      ]
+    },
+    {
+      "code": "officine-cucini",
+      "name": "Officine Cucini",
+      "core": false,
+      "kinds": [
+        "van"
+      ],
+      "models": [
+        {
+          "code": "porter-oc-np6-s",
+          "name": "Porter Oc-NP6/S"
+        }
+      ]
+    },
+    {
+      "code": "oil-steel",
+      "name": "Oil & Steel",
+      "core": false,
+      "kinds": [
+        "van"
+      ],
+      "models": [
+        {
+          "code": "35s14",
+          "name": "35S14"
+        },
+        {
+          "code": "is35si2aa",
+          "name": "IS35SI2AA"
+        }
+      ]
+    },
+    {
+      "code": "p-h",
+      "name": "P & H",
+      "core": false,
+      "kinds": [
+        "truck"
+      ],
+      "models": [
+        {
+          "code": "omega",
+          "name": "Omega"
+        }
+      ]
+    },
+    {
+      "code": "palfinger",
+      "name": "Palfinger",
+      "core": false,
+      "kinds": [
+        "van"
+      ],
+      "models": [
+        {
+          "code": "palfinger-p200txe-l-f24p-e6",
+          "name": "PALFINGER_P200TXE-L_F24P_E6"
+        }
+      ]
+    },
+    {
+      "code": "paragan",
+      "name": "Paragan",
+      "core": false,
+      "kinds": [
+        "van"
+      ],
+      "models": [
+        {
+          "code": "equistar",
+          "name": "Equistar"
+        },
+        {
+          "code": "equistar-3",
+          "name": "Equistar 3"
+        },
+        {
+          "code": "eurobox-r-xxl",
+          "name": "Eurobox-R-Xxl"
+        },
+        {
+          "code": "excelsion-5",
+          "name": "Excelsion 5"
+        }
+      ]
+    },
+    {
+      "code": "pegaso",
+      "name": "Pegaso",
+      "core": false,
+      "kinds": [
+        "truck"
+      ],
+      "models": [
+        {
+          "code": "troner",
+          "name": "Troner"
+        }
+      ]
+    },
+    {
+      "code": "peterbilt",
+      "name": "Peterbilt",
+      "core": false,
+      "kinds": [
+        "truck"
+      ],
+      "models": []
+    },
+    {
+      "code": "piaggio",
+      "name": "Piaggio",
+      "core": false,
+      "kinds": [
+        "van"
+      ],
+      "models": [
+        {
+          "code": "porter",
+          "name": "Porter"
+        },
+        {
+          "code": "porter-np6",
+          "name": "Porter NP6"
+        },
+        {
+          "code": "porter-npe",
+          "name": "Porter Npe"
+        }
+      ]
+    },
+    {
+      "code": "polaris",
+      "name": "Polaris",
+      "core": false,
+      "kinds": [
+        "van"
+      ],
+      "models": [
+        {
+          "code": "ranger",
+          "name": "Ranger"
+        }
+      ]
+    },
+    {
+      "code": "proton",
+      "name": "Proton",
+      "core": false,
+      "kinds": [
+        "van"
+      ],
+      "models": [
+        {
+          "code": "jumbuck",
+          "name": "Jumbuck"
+        }
+      ]
+    },
+    {
+      "code": "ram",
+      "name": "Ram",
+      "core": false,
+      "kinds": [
+        "truck",
+        "van"
+      ],
+      "models": [
+        {
+          "code": "1500-laramie",
+          "name": "1500 Laramie"
+        },
+        {
+          "code": "1500-limited",
+          "name": "1500 Limited"
+        },
+        {
+          "code": "1500-rebel",
+          "name": "1500 Rebel"
+        },
+        {
+          "code": "1500-rho",
+          "name": "1500 Rho"
+        },
+        {
+          "code": "1500-sport",
+          "name": "1500 Sport"
+        },
+        {
+          "code": "1500-trx",
+          "name": "1500 Trx"
+        },
+        {
+          "code": "carvista",
+          "name": "Carvista"
+        },
+        {
+          "code": "laramie",
+          "name": "Laramie"
+        },
+        {
+          "code": "trx",
+          "name": "Trx"
+        }
+      ]
+    },
+    {
+      "code": "reliant",
+      "name": "Reliant",
+      "core": false,
+      "kinds": [
+        "van"
+      ],
+      "models": [
+        {
+          "code": "fox",
+          "name": "Fox"
+        }
+      ]
+    },
+    {
+      "code": "roelofsen",
+      "name": "Roelofsen",
+      "core": false,
+      "kinds": [
+        "van"
+      ],
+      "models": [
+        {
+          "code": "parados-sport",
+          "name": "Parados Sport"
+        }
+      ]
+    },
+    {
+      "code": "rover",
+      "name": "Rover",
+      "core": false,
+      "kinds": [
+        "van"
+      ],
+      "models": [
+        {
+          "code": "maestro",
+          "name": "Maestro"
+        }
+      ]
+    },
+    {
+      "code": "saab",
+      "name": "Saab",
+      "core": false,
+      "kinds": [
+        "van"
+      ],
+      "models": [
+        {
+          "code": "95e-v4-van",
+          "name": "95E-V4 Van"
+        }
+      ]
+    },
+    {
+      "code": "santana",
+      "name": "Santana",
+      "core": false,
+      "kinds": [
+        "van"
+      ],
+      "models": [
+        {
+          "code": "ps10",
+          "name": "PS10"
+        }
+      ]
+    },
+    {
+      "code": "sany",
+      "name": "Sany",
+      "core": false,
+      "kinds": [
+        "truck"
+      ],
+      "models": [
+        {
+          "code": "sac",
+          "name": "Sac"
+        }
+      ]
+    },
+    {
+      "code": "saurer",
+      "name": "Saurer",
+      "core": false,
+      "kinds": [
+        "truck"
+      ],
+      "models": [
+        {
+          "code": "berna",
+          "name": "Berna"
+        }
+      ]
+    },
+    {
+      "code": "saxas",
+      "name": "Saxas",
+      "core": false,
+      "kinds": [
+        "truck",
+        "van"
+      ],
+      "models": [
+        {
+          "code": "atego",
+          "name": "Atego"
+        },
+        {
+          "code": "mkd",
+          "name": "Mkd"
+        },
+        {
+          "code": "mkd-43-l-n",
+          "name": "Mkd 43 L N"
+        },
+        {
+          "code": "mkd-43-l",
+          "name": "Mkd 43-L"
+        },
+        {
+          "code": "mkd-43-l-u",
+          "name": "Mkd 43-L-U"
+        },
+        {
+          "code": "mkd43-l-u",
+          "name": "MKD43 L U"
+        }
+      ]
+    },
+    {
+      "code": "scania-vabis",
+      "name": "Scania-Vabis",
+      "core": false,
+      "kinds": [
+        "truck"
+      ],
+      "models": [
+        {
+          "code": "l51",
+          "name": "L51"
+        },
+        {
+          "code": "l66",
+          "name": "L66"
+        },
+        {
+          "code": "l71",
+          "name": "L71"
+        },
+        {
+          "code": "l76",
+          "name": "L76"
+        },
+        {
+          "code": "lb",
+          "name": "Lb"
+        },
+        {
+          "code": "lbs",
+          "name": "Lbs"
+        },
+        {
+          "code": "ls",
+          "name": "LS"
+        }
+      ]
+    },
+    {
+      "code": "scattolini",
+      "name": "Scattolini",
+      "core": false,
+      "kinds": [
+        "van"
+      ],
+      "models": [
+        {
+          "code": "35s12",
+          "name": "35S12"
+        },
+        {
+          "code": "sprinter",
+          "name": "Sprinter"
+        }
+      ]
+    },
+    {
+      "code": "schmidt",
+      "name": "Schmidt",
+      "core": false,
+      "kinds": [
+        "truck"
+      ],
+      "models": []
+    },
+    {
+      "code": "schwing",
+      "name": "Schwing",
+      "core": false,
+      "kinds": [
+        "truck"
+      ],
+      "models": [
+        {
+          "code": "s-line",
+          "name": "S-Line"
+        },
+        {
+          "code": "x-line",
+          "name": "X Line"
+        }
+      ]
+    },
+    {
+      "code": "seat",
+      "name": "SEAT",
+      "core": false,
+      "kinds": [
+        "van"
+      ],
+      "models": [
+        {
+          "code": "inca",
+          "name": "Inca"
+        }
+      ]
+    },
+    {
+      "code": "setra",
+      "name": "Setra",
+      "core": false,
+      "kinds": [
+        "truck"
+      ],
+      "models": [
+        {
+          "code": "s309",
+          "name": "S309"
+        }
+      ]
+    },
+    {
+      "code": "simca",
+      "name": "Simca",
+      "core": false,
+      "kinds": [
+        "van"
+      ],
+      "models": []
+    },
+    {
+      "code": "sinotruk",
+      "name": "Sinotruk",
+      "core": false,
+      "kinds": [
+        "truck"
+      ],
+      "models": [
+        {
+          "code": "c7h",
+          "name": "C7H"
+        },
+        {
+          "code": "t5g",
+          "name": "T5G"
+        }
+      ]
+    },
+    {
+      "code": "socage",
+      "name": "Socage",
+      "core": false,
+      "kinds": [
+        "van"
+      ],
+      "models": [
+        {
+          "code": "14t-speed",
+          "name": "14T Speed"
+        },
+        {
+          "code": "18t-speed",
+          "name": "18T Speed"
+        },
+        {
+          "code": "20d-speed",
+          "name": "20D Speed"
+        },
+        {
+          "code": "24d-speed",
+          "name": "24D Speed"
+        }
+      ]
+    },
+    {
+      "code": "sommer-gmbh",
+      "name": "Sommer Gmbh",
+      "core": false,
+      "kinds": [
+        "van"
+      ],
+      "models": [
+        {
+          "code": "panelvan",
+          "name": "Panelvan"
+        }
+      ]
+    },
+    {
+      "code": "spier",
+      "name": "Spier",
+      "core": false,
+      "kinds": [
+        "truck",
+        "van"
+      ],
+      "models": [
+        {
+          "code": "athlet-2",
+          "name": "Athlet 2"
+        },
+        {
+          "code": "p45",
+          "name": "P45"
+        },
+        {
+          "code": "p70",
+          "name": "P70"
+        },
+        {
+          "code": "sprinter",
+          "name": "Sprinter"
+        }
+      ]
+    },
+    {
+      "code": "spierings",
+      "name": "Spierings",
+      "core": false,
+      "kinds": [
+        "truck"
+      ],
+      "models": [
+        {
+          "code": "at",
+          "name": "At"
+        },
+        {
+          "code": "at3g",
+          "name": "AT3G"
+        },
+        {
+          "code": "sk",
+          "name": "Sk"
+        },
+        {
+          "code": "sk597",
+          "name": "SK597"
+        }
+      ]
+    },
+    {
+      "code": "ssangyong",
+      "name": "SsangYong",
+      "core": false,
+      "kinds": [
+        "van"
+      ],
+      "models": [
+        {
+          "code": "actyon",
+          "name": "Actyon"
+        },
+        {
+          "code": "actyon-sport",
+          "name": "Actyon Sport"
+        },
+        {
+          "code": "korando",
+          "name": "Korando"
+        },
+        {
+          "code": "musso",
+          "name": "Musso"
+        },
+        {
+          "code": "rexton",
+          "name": "Rexton"
+        }
+      ]
+    },
+    {
+      "code": "sterling",
+      "name": "Sterling",
+      "core": false,
+      "kinds": [
+        "truck"
+      ],
+      "models": [
+        {
+          "code": "at9500",
+          "name": "AT9500"
+        },
+        {
+          "code": "lt7500",
+          "name": "LT7500"
+        },
+        {
+          "code": "lt9500",
+          "name": "LT9500"
+        }
+      ]
+    },
+    {
+      "code": "steyr",
+      "name": "Steyr",
+      "core": false,
+      "kinds": [
+        "truck"
+      ],
+      "models": []
+    },
+    {
+      "code": "streetscooter",
+      "name": "Streetscooter",
+      "core": false,
+      "kinds": [
+        "van"
+      ],
+      "models": [
+        {
+          "code": "work",
+          "name": "Work"
+        }
+      ]
+    },
+    {
+      "code": "studebaker",
+      "name": "Studebaker",
+      "core": false,
+      "kinds": [
+        "van"
+      ],
+      "models": [
+        {
+          "code": "pick-up",
+          "name": "Pick Up"
+        }
+      ]
+    },
+    {
+      "code": "stx",
+      "name": "Stx",
+      "core": false,
+      "kinds": [
+        "truck",
+        "van"
+      ],
+      "models": [
+        {
+          "code": "actros",
+          "name": "Actros"
+        },
+        {
+          "code": "fh",
+          "name": "FH"
+        },
+        {
+          "code": "master",
+          "name": "Master"
+        },
+        {
+          "code": "master-horsebox",
+          "name": "Master Horsebox"
+        },
+        {
+          "code": "movano",
+          "name": "Movano"
+        },
+        {
+          "code": "movano-horsebox",
+          "name": "Movano Horsebox"
+        },
+        {
+          "code": "sprinter",
+          "name": "Sprinter"
+        }
+      ]
+    },
+    {
+      "code": "subaru",
+      "name": "Subaru",
+      "core": false,
+      "kinds": [
+        "van"
+      ],
+      "models": [
+        {
+          "code": "baja",
+          "name": "Baja"
+        },
+        {
+          "code": "brumby",
+          "name": "Brumby"
+        },
+        {
+          "code": "sambar",
+          "name": "Sambar"
+        }
+      ]
+    },
+    {
+      "code": "suzuki",
+      "name": "Suzuki",
+      "core": false,
+      "kinds": [
+        "van"
+      ],
+      "models": [
+        {
+          "code": "carry",
+          "name": "Carry"
+        },
+        {
+          "code": "carry-1-5l-mt",
+          "name": "Carry 1.5L MT"
+        },
+        {
+          "code": "carry-pick-up",
+          "name": "Carry Pick Up"
+        },
+        {
+          "code": "jimny",
+          "name": "Jimny"
+        },
+        {
+          "code": "mighty-boy",
+          "name": "Mighty Boy"
+        },
+        {
+          "code": "samurai",
+          "name": "Samurai"
+        },
+        {
+          "code": "sj",
+          "name": "Sj"
+        },
+        {
+          "code": "sj410",
+          "name": "SJ410"
+        },
+        {
+          "code": "supercarry",
+          "name": "Supercarry"
+        },
+        {
+          "code": "v-dd51t",
+          "name": "V-DD51T"
+        }
+      ]
+    },
+    {
+      "code": "tadano",
+      "name": "Tadano",
+      "core": false,
+      "kinds": [
+        "truck"
+      ],
+      "models": [
+        {
+          "code": "ac3",
+          "name": "AC3"
+        },
+        {
+          "code": "ac4",
+          "name": "AC4"
+        },
+        {
+          "code": "ac5",
+          "name": "AC5"
+        },
+        {
+          "code": "atf",
+          "name": "Atf"
+        }
+      ]
+    },
+    {
+      "code": "tadano-faun",
+      "name": "Tadano Faun",
+      "core": false,
+      "kinds": [
+        "truck"
+      ],
+      "models": [
+        {
+          "code": "atf",
+          "name": "Atf"
+        }
+      ]
+    },
+    {
+      "code": "talbot",
+      "name": "Talbot",
+      "core": false,
+      "kinds": [
+        "van"
+      ],
+      "models": [
+        {
+          "code": "express",
+          "name": "Express"
+        }
+      ]
+    },
+    {
+      "code": "tata",
+      "name": "Tata",
+      "core": false,
+      "kinds": [
+        "van"
+      ],
+      "models": [
+        {
+          "code": "loadbeta",
+          "name": "Loadbeta"
+        },
+        {
+          "code": "super-ace-mint",
+          "name": "Super Ace Mint"
+        },
+        {
+          "code": "xenon",
+          "name": "Xenon"
+        }
+      ]
+    },
+    {
+      "code": "teijo",
+      "name": "Teijo",
+      "core": false,
+      "kinds": [
+        "van"
+      ],
+      "models": []
+    },
+    {
+      "code": "terberg",
+      "name": "Terberg",
+      "core": false,
+      "kinds": [
+        "truck"
+      ],
+      "models": [
+        {
+          "code": "dt",
+          "name": "Dt"
+        },
+        {
+          "code": "f2000",
+          "name": "F2000"
+        },
+        {
+          "code": "fm",
+          "name": "FM"
+        },
+        {
+          "code": "yt",
+          "name": "Yt"
+        }
+      ]
+    },
+    {
+      "code": "terex",
+      "name": "Terex",
+      "core": false,
+      "kinds": [
+        "truck"
+      ],
+      "models": [
+        {
+          "code": "ac",
+          "name": "Ac"
+        },
+        {
+          "code": "explorer",
+          "name": "Explorer"
+        },
+        {
+          "code": "ta",
+          "name": "Ta"
+        }
+      ]
+    },
+    {
+      "code": "tesla",
+      "name": "Tesla",
+      "core": false,
+      "kinds": [
+        "truck"
+      ],
+      "models": [
+        {
+          "code": "semi",
+          "name": "Semi"
+        }
+      ]
+    },
+    {
+      "code": "theault",
+      "name": "Theault",
+      "core": false,
+      "kinds": [
+        "van"
+      ],
+      "models": [
+        {
+          "code": "first-eo",
+          "name": "First'eo"
+        },
+        {
+          "code": "proteo",
+          "name": "Proteo"
+        }
+      ]
+    },
+    {
+      "code": "thwaites",
+      "name": "Thwaites",
+      "core": false,
+      "kinds": [
+        "truck"
+      ],
+      "models": [
+        {
+          "code": "mach",
+          "name": "Mach"
+        }
+      ]
+    },
+    {
+      "code": "tsd",
+      "name": "Tsd",
+      "core": false,
+      "kinds": [
+        "truck"
+      ],
+      "models": [
+        {
+          "code": "ts",
+          "name": "Ts"
+        }
+      ]
+    },
+    {
+      "code": "ud",
+      "name": "Ud",
+      "core": false,
+      "kinds": [
+        "truck"
+      ],
+      "models": [
+        {
+          "code": "condor",
+          "name": "Condor"
+        },
+        {
+          "code": "croner",
+          "name": "Croner"
+        },
+        {
+          "code": "pd",
+          "name": "PD"
+        },
+        {
+          "code": "pk",
+          "name": "PK"
+        },
+        {
+          "code": "quon",
+          "name": "Quon"
+        }
+      ]
+    },
+    {
+      "code": "ural",
+      "name": "Ural",
+      "core": false,
+      "kinds": [
+        "truck"
+      ],
+      "models": []
+    },
+    {
+      "code": "van-blitterswijk",
+      "name": "Van Blitterswijk",
+      "core": false,
+      "kinds": [
+        "van"
+      ],
+      "models": [
+        {
+          "code": "g4-eco-mobiliteit",
+          "name": "G4 Eco-Mobiliteit"
+        }
+      ]
+    },
+    {
+      "code": "vauxhall",
+      "name": "Vauxhall",
+      "core": false,
+      "kinds": [
+        "truck",
+        "van"
+      ],
+      "models": [
+        {
+          "code": "astra",
+          "name": "Astra"
+        },
+        {
+          "code": "brava",
+          "name": "Brava"
+        },
+        {
+          "code": "combo",
+          "name": "Combo"
+        },
+        {
+          "code": "corsavan",
+          "name": "Corsavan"
+        },
+        {
+          "code": "midi",
+          "name": "Midi"
+        },
+        {
+          "code": "movano",
+          "name": "Movano"
+        },
+        {
+          "code": "movano-dti-3500-lwb",
+          "name": "Movano Dti 3500 Lwb"
+        },
+        {
+          "code": "rascal",
+          "name": "Rascal"
+        },
+        {
+          "code": "vivaro",
+          "name": "Vivaro"
+        }
+      ]
+    },
+    {
+      "code": "wacker-neuson",
+      "name": "Wacker Neuson",
+      "core": false,
+      "kinds": [
+        "truck",
+        "van"
+      ],
+      "models": [
+        {
+          "code": "1000-series",
+          "name": "1000 Series"
+        },
+        {
+          "code": "dv",
+          "name": "Dv"
+        },
+        {
+          "code": "dw",
+          "name": "Dw"
+        }
+      ]
+    },
+    {
+      "code": "wecon",
+      "name": "Wecon",
+      "core": false,
+      "kinds": [
+        "truck"
+      ],
+      "models": [
+        {
+          "code": "ma",
+          "name": "Ma"
+        }
+      ]
+    },
+    {
+      "code": "western-star",
+      "name": "Western Star",
+      "core": false,
+      "kinds": [
+        "truck"
+      ],
+      "models": [
+        {
+          "code": "5864ss",
+          "name": "5864SS"
+        },
+        {
+          "code": "5964ss",
+          "name": "5964SS"
+        },
+        {
+          "code": "6964f",
+          "name": "6964F"
+        },
+        {
+          "code": "constellation",
+          "name": "Constellation"
+        },
+        {
+          "code": "x-series",
+          "name": "X-Series"
+        }
+      ]
+    },
+    {
+      "code": "white",
+      "name": "White",
+      "core": false,
+      "kinds": [
+        "truck"
+      ],
+      "models": [
+        {
+          "code": "half",
+          "name": "Half"
+        }
+      ]
+    },
+    {
+      "code": "willys",
+      "name": "Willys",
+      "core": false,
+      "kinds": [
+        "van"
+      ],
+      "models": [
+        {
+          "code": "jeep-cj-3b",
+          "name": "Jeep Cj-3B"
+        }
+      ]
+    },
+    {
+      "code": "wvt",
+      "name": "Wvt",
+      "core": false,
+      "kinds": [
+        "truck"
+      ],
+      "models": [
+        {
+          "code": "tgs",
+          "name": "TGS"
+        }
+      ]
+    },
+    {
+      "code": "xcmg",
+      "name": "Xcmg",
+      "core": false,
+      "kinds": [
+        "truck"
+      ],
+      "models": [
+        {
+          "code": "xca",
+          "name": "Xca"
+        }
+      ]
+    },
+    {
+      "code": "yaxing",
+      "name": "Yaxing",
+      "core": false,
+      "kinds": [
+        "truck"
+      ],
+      "models": [
+        {
+          "code": "caro",
+          "name": "Caro"
+        }
+      ]
+    },
+    {
+      "code": "zil",
+      "name": "Zil",
+      "core": false,
+      "kinds": [
+        "truck"
+      ],
+      "models": []
+    },
+    {
+      "code": "zoeller-kipper",
+      "name": "Zoeller-Kipper",
+      "core": false,
+      "kinds": [
+        "truck"
+      ],
+      "models": [
+        {
+          "code": "medium",
+          "name": "Medium"
+        }
+      ]
+    },
+    {
+      "code": "skoda",
+      "name": "Škoda",
+      "core": false,
+      "kinds": [
+        "van"
+      ],
+      "models": [
+        {
+          "code": "favorit",
+          "name": "Favorit"
+        },
+        {
+          "code": "felicia",
+          "name": "Felicia"
+        },
+        {
+          "code": "praktik",
+          "name": "Praktik"
+        }
+      ]
+    }
+  ]
+}

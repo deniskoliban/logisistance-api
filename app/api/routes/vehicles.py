@@ -8,6 +8,7 @@ from sqlalchemy.exc import IntegrityError
 from sqlalchemy.orm import Session
 
 from app.api.deps import get_current_user
+from app.core.vehicle_catalog import load_catalog
 from app.db.session import get_db
 from app.models.user import User
 from app.models.vehicle import Vehicle
@@ -26,15 +27,33 @@ def _get_owned_vehicle(vehicle_id: int, owner: User, db: Session) -> Vehicle:
     return vehicle
 
 
-def _commit_or_conflict(db: Session, plate: str) -> None:
+def _conflict_detail(error: IntegrityError, plate: str, vin: str | None) -> str:
+    """Name the field that actually collided instead of blaming the plate every time."""
+    message = str(error.orig)
+    if "vin" in message.lower() and vin:
+        return f"A vehicle with VIN {vin} already exists in your fleet"
+    return f"A vehicle with plate {plate} already exists in your fleet"
+
+
+def _commit_or_conflict(db: Session, plate: str, vin: str | None) -> None:
     try:
         db.commit()
-    except IntegrityError:
+    except IntegrityError as error:
         db.rollback()
         raise HTTPException(
             status_code=status.HTTP_409_CONFLICT,
-            detail=f"A vehicle with plate {plate} already exists in your fleet",
+            detail=_conflict_detail(error, plate, vin),
         ) from None
+
+
+def _require_catalog_entry(make: str, model: str) -> None:
+    """A PATCH can move a vehicle to another make/model: check the pair again."""
+    catalog = load_catalog()
+    if catalog.make(make) is None or not catalog.has_model(make, model):
+        raise HTTPException(
+            status_code=status.HTTP_422_UNPROCESSABLE_CONTENT,
+            detail=f"Unknown vehicle {make!r} {model!r}: pick a make and model from the catalogue",
+        )
 
 
 @router.get("", response_model=VehicleList)
@@ -47,9 +66,7 @@ def list_vehicles(
     total = db.scalar(
         select(func.count()).select_from(Vehicle).where(Vehicle.owner_id == current_user.id)
     )
-    return VehicleList(
-        items=[VehicleRead.model_validate(v) for v in vehicles], total=total or 0
-    )
+    return VehicleList(items=[VehicleRead.model_validate(v) for v in vehicles], total=total or 0)
 
 
 @router.post("", response_model=VehicleRead, status_code=status.HTTP_201_CREATED)
@@ -61,7 +78,7 @@ def create_vehicle(
     data = payload.model_dump()
     vehicle = Vehicle(owner_id=current_user.id, **data)
     db.add(vehicle)
-    _commit_or_conflict(db, payload.plate)
+    _commit_or_conflict(db, payload.plate, payload.vin)
     db.refresh(vehicle)
     return vehicle
 
@@ -84,10 +101,18 @@ def update_vehicle(
 ) -> Vehicle:
     vehicle = _get_owned_vehicle(vehicle_id, current_user, db)
     changes = payload.model_dump(exclude_unset=True)
+    make = changes.get("make", vehicle.make)
+    model = changes.get("model", vehicle.model)
+    if "make" in changes or "model" in changes:
+        _require_catalog_entry(make, model)
     for field, value in changes.items():
         setattr(vehicle, field, value)
     db.add(vehicle)
-    _commit_or_conflict(db, changes.get("plate", vehicle.plate))
+    _commit_or_conflict(
+        db,
+        changes.get("plate", vehicle.plate),
+        changes.get("vin", vehicle.vin),
+    )
     db.refresh(vehicle)
     return vehicle
 
