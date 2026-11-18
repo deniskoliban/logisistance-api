@@ -55,6 +55,8 @@ CORE: dict[str, tuple[str, list[str]]] = {
             "Vito",
             "Citan",
             "Unimog",
+            "Vario",
+            "Zetros",
         ],
     ),
     "iveco": (
@@ -69,31 +71,70 @@ CORE: dict[str, tuple[str, list[str]]] = {
             "Eurotrakker",
             "Trakker",
             "Daily",
+            "Massif",
+            "Acco",
         ],
     ),
     "renault": (
         "Renault Trucks",
-        ["T", "C", "K", "Master", "Trafic", "Kangoo", "Magnum", "Premium", "Midlum", "Kerax"],
+        [
+            "T",
+            "C",
+            "K",
+            "Master",
+            "Trafic",
+            "Kangoo",
+            "Express",
+            "Magnum",
+            "Premium",
+            "Midlum",
+            "Kerax",
+            "Maxity",
+            "Mascott",
+        ],
     ),
     "isuzu": ("Isuzu", ["D-Max", "N-Series", "F-Series", "Grafter", "Forward"]),
-    "mitsubishi-fuso": ("Mitsubishi Fuso", ["Canter", "eCanter", "FE", "FV"]),
+    "mitsubishi-fuso": ("Mitsubishi Fuso", ["Canter", "eCanter", "F-Series", "FE", "FV"]),
     "sisu": ("Sisu", ["Polar", "R-Series", "C-Series"]),
     "tatra": ("Tatra", ["Phoenix", "Force", "T815"]),
     "volkswagen": (
         "Volkswagen",
-        ["Crafter", "Transporter", "Caddy", "Amarok", "ID. Buzz Cargo"],
+        ["Crafter", "Transporter", "Caddy", "Amarok", "ID. Buzz Cargo", "LT"],
     ),
     "ford": (
         "Ford",
-        ["Transit", "Transit Custom", "Transit Connect", "Transit Courier", "Ranger", "F-Max"],
+        [
+            "Transit",
+            "Transit Custom",
+            "Transit Connect",
+            "Transit Courier",
+            "Ranger",
+            "F-Max",
+            "Cargo",
+        ],
     ),
-    "fiat": ("Fiat", ["Ducato", "Doblò", "Fiorino", "Scudo"]),
-    "peugeot": ("Peugeot", ["Boxer", "Expert", "Partner", "Bipper"]),
-    "citroen": ("Citroën", ["Jumper", "Jumpy", "Berlingo", "Nemo"]),
-    "opel": ("Opel", ["Movano", "Vivaro", "Combo"]),
-    "nissan": ("Nissan", ["Interstar", "Primastar", "NV400", "NV300", "Townstar"]),
-    "toyota": ("Toyota", ["Proace", "Proace City", "Hilux"]),
-    "maxus": ("Maxus", ["Deliver 7", "Deliver 9", "eDeliver 3", "eDeliver 9", "T60", "T90"]),
+    "fiat": (
+        "Fiat",
+        ["Ducato", "Doblò", "Fiorino", "Scudo", "Talento", "Fullback", "Strada", "Panda Van"],
+    ),
+    "peugeot": (
+        "Peugeot",
+        ["Boxer", "Expert", "Partner", "Bipper", "Rifter", "E-Rifter", "J5"],
+    ),
+    "citroen": (
+        "Citroën",
+        ["Jumper", "Jumpy", "Berlingo", "Nemo", "Relay", "Dispatch", "J5", "C15", "C25", "E-C3 Van"],
+    ),
+    "opel": ("Opel", ["Movano", "Vivaro", "Combo", "Corsa Van", "Astravan"]),
+    "nissan": (
+        "Nissan",
+        ["Interstar", "Primastar", "NV400", "NV300", "Townstar", "Navara", "NP300", "Cabstar", "E-NV200", "Kubistar"],
+    ),
+    "toyota": ("Toyota", ["Proace", "Proace City", "Hilux", "Dyna", "Hiace"]),
+    "maxus": (
+        "Maxus",
+        ["Deliver 7", "Deliver 9", "eDeliver 3", "eDeliver 5", "eDeliver 9", "EV80", "T60", "T90", "eTerron 9"],
+    ),
     "byd": ("BYD", ["E-Vali", "ETP3", "T3"]),
     "volta-trucks": ("Volta Trucks", ["Zero"]),
 }
@@ -148,14 +189,14 @@ def main() -> int:
     for code, make in sorted(makes.items(), key=lambda item: item[1]["name"].casefold()):
         if code in CORE:
             continue
-        names = sorted(
-            {
-                model["name"].strip()
-                for model in models.get(code, [])
-                if model["name"].strip() and not _DIGITS_ONLY.match(model["name"].strip())
-            },
+        all_names = sorted(
+            {model["name"].strip() for model in models.get(code, []) if model["name"].strip()},
             key=str.casefold,
-        )[:MODELS_PER_NON_CORE_MAKE]
+        )
+        # Digit-only names are usually register noise ("415", "12"), but some makes have nothing else:
+        # Zil 130, Ural 375 and Steyr 586 are real vehicles, and filtering them left 9 makes unusable.
+        names = [name for name in all_names if not _DIGITS_ONLY.match(name)] or all_names
+        names = names[:MODELS_PER_NON_CORE_MAKE]
         catalogue.append(
             {
                 "code": code,

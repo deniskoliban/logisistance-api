@@ -235,6 +235,14 @@
         {
           "code": "unimog",
           "name": "Unimog"
+        },
+        {
+          "code": "vario",
+          "name": "Vario"
+        },
+        {
+          "code": "zetros",
+          "name": "Zetros"
         }
       ]
     },
@@ -282,6 +290,14 @@
         {
           "code": "daily",
           "name": "Daily"
+        },
+        {
+          "code": "massif",
+          "name": "Massif"
+        },
+        {
+          "code": "acco",
+          "name": "Acco"
         }
       ]
     },
@@ -319,6 +335,10 @@
           "name": "Kangoo"
         },
         {
+          "code": "express",
+          "name": "Express"
+        },
+        {
           "code": "magnum",
           "name": "Magnum"
         },
@@ -333,6 +353,14 @@
         {
           "code": "kerax",
           "name": "Kerax"
+        },
+        {
+          "code": "maxity",
+          "name": "Maxity"
+        },
+        {
+          "code": "mascott",
+          "name": "Mascott"
         }
       ]
     },
@@ -383,6 +411,10 @@
         {
           "code": "ecanter",
           "name": "eCanter"
+        },
+        {
+          "code": "f-series",
+          "name": "F-Series"
         },
         {
           "code": "fe",
@@ -466,6 +498,10 @@
         {
           "code": "id-buzz-cargo",
           "name": "ID. Buzz Cargo"
+        },
+        {
+          "code": "lt",
+          "name": "LT"
         }
       ]
     },
@@ -501,6 +537,10 @@
         {
           "code": "f-max",
           "name": "F-Max"
+        },
+        {
+          "code": "cargo",
+          "name": "Cargo"
         }
       ]
     },
@@ -528,6 +568,22 @@
         {
           "code": "scudo",
           "name": "Scudo"
+        },
+        {
+          "code": "talento",
+          "name": "Talento"
+        },
+        {
+          "code": "fullback",
+          "name": "Fullback"
+        },
+        {
+          "code": "strada",
+          "name": "Strada"
+        },
+        {
+          "code": "panda-van",
+          "name": "Panda Van"
         }
       ]
     },
@@ -555,6 +611,18 @@
         {
           "code": "bipper",
           "name": "Bipper"
+        },
+        {
+          "code": "rifter",
+          "name": "Rifter"
+        },
+        {
+          "code": "e-rifter",
+          "name": "E-Rifter"
+        },
+        {
+          "code": "j5",
+          "name": "J5"
         }
       ]
     },
@@ -582,6 +650,30 @@
         {
           "code": "nemo",
           "name": "Nemo"
+        },
+        {
+          "code": "relay",
+          "name": "Relay"
+        },
+        {
+          "code": "dispatch",
+          "name": "Dispatch"
+        },
+        {
+          "code": "j5",
+          "name": "J5"
+        },
+        {
+          "code": "c15",
+          "name": "C15"
+        },
+        {
+          "code": "c25",
+          "name": "C25"
+        },
+        {
+          "code": "e-c3-van",
+          "name": "E-C3 Van"
         }
       ]
     },
@@ -605,6 +697,14 @@
         {
           "code": "combo",
           "name": "Combo"
+        },
+        {
+          "code": "corsa-van",
+          "name": "Corsa Van"
+        },
+        {
+          "code": "astravan",
+          "name": "Astravan"
         }
       ]
     },
@@ -636,6 +736,26 @@
         {
           "code": "townstar",
           "name": "Townstar"
+        },
+        {
+          "code": "navara",
+          "name": "Navara"
+        },
+        {
+          "code": "np300",
+          "name": "NP300"
+        },
+        {
+          "code": "cabstar",
+          "name": "Cabstar"
+        },
+        {
+          "code": "e-nv200",
+          "name": "E-NV200"
+        },
+        {
+          "code": "kubistar",
+          "name": "Kubistar"
         }
       ]
     },
@@ -659,6 +779,14 @@
         {
           "code": "hilux",
           "name": "Hilux"
+        },
+        {
+          "code": "dyna",
+          "name": "Dyna"
+        },
+        {
+          "code": "hiace",
+          "name": "Hiace"
         }
       ]
     },
@@ -684,8 +812,16 @@
           "name": "eDeliver 3"
         },
         {
+          "code": "edeliver-5",
+          "name": "eDeliver 5"
+        },
+        {
           "code": "edeliver-9",
           "name": "eDeliver 9"
+        },
+        {
+          "code": "ev80",
+          "name": "EV80"
         },
         {
           "code": "t60",
@@ -694,6 +830,10 @@
         {
           "code": "t90",
           "name": "T90"
+        },
+        {
+          "code": "eterron-9",
+          "name": "eTerron 9"
         }
       ]
     },
@@ -2697,7 +2837,12 @@
       "kinds": [
         "truck"
       ],
-      "models": []
+      "models": [
+        {
+          "code": "900",
+          "name": "900"
+        }
+      ]
     },
     {
       "code": "hyundai",
@@ -3421,7 +3566,36 @@
         "truck",
         "van"
       ],
-      "models": []
+      "models": [
+        {
+          "code": "200",
+          "name": "200"
+        },
+        {
+          "code": "400",
+          "name": "400"
+        },
+        {
+          "code": "45",
+          "name": "45"
+        },
+        {
+          "code": "50",
+          "name": "50"
+        },
+        {
+          "code": "55",
+          "name": "55"
+        },
+        {
+          "code": "60",
+          "name": "60"
+        },
+        {
+          "code": "65",
+          "name": "65"
+        }
+      ]
     },
     {
       "code": "liebherr",
@@ -3928,7 +4102,16 @@
       "kinds": [
         "truck"
       ],
-      "models": []
+      "models": [
+        {
+          "code": "359",
+          "name": "359"
+        },
+        {
+          "code": "362",
+          "name": "362"
+        }
+      ]
     },
     {
       "code": "piaggio",
@@ -4223,7 +4406,12 @@
       "kinds": [
         "truck"
       ],
-      "models": []
+      "models": [
+        {
+          "code": "200",
+          "name": "200"
+        }
+      ]
     },
     {
       "code": "schwing",
@@ -4278,7 +4466,12 @@
       "kinds": [
         "van"
       ],
-      "models": []
+      "models": [
+        {
+          "code": "1100",
+          "name": "1100"
+        }
+      ]
     },
     {
       "code": "sinotruk",
@@ -4450,7 +4643,16 @@
       "kinds": [
         "truck"
       ],
-      "models": []
+      "models": [
+        {
+          "code": "586",
+          "name": "586"
+        },
+        {
+          "code": "680",
+          "name": "680"
+        }
+      ]
     },
     {
       "code": "streetscooter",
@@ -4674,7 +4876,12 @@
       "kinds": [
         "van"
       ],
-      "models": []
+      "models": [
+        {
+          "code": "24",
+          "name": "24"
+        }
+      ]
     },
     {
       "code": "terberg",
@@ -4821,7 +5028,16 @@
       "kinds": [
         "truck"
       ],
-      "models": []
+      "models": [
+        {
+          "code": "375",
+          "name": "375"
+        },
+        {
+          "code": "4320",
+          "name": "4320"
+        }
+      ]
     },
     {
       "code": "van-blitterswijk",
@@ -5028,7 +5244,20 @@
       "kinds": [
         "truck"
       ],
-      "models": []
+      "models": [
+        {
+          "code": "130",
+          "name": "130"
+        },
+        {
+          "code": "131",
+          "name": "131"
+        },
+        {
+          "code": "157",
+          "name": "157"
+        }
+      ]
     },
     {
       "code": "zoeller-kipper",
