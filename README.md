@@ -6,6 +6,9 @@ carriers in the European Union.
 The web client lives in a separate repository:
 [`logisistance-web`](https://github.com/deniskoliban/logisistance-web) (Angular).
 
+Product scope, architecture decisions, conventions and known traps live in the workspace `docs/` folder
+that sits next to both repositories, not here.
+
 **Status:** v0.1 — accounts, driver profiles and vehicle profiles. Freight exchange adapters,
 route planning and backhaul matching are next.
 
@@ -74,7 +77,6 @@ app/
 ├── schemas/             # Pydantic request/response models
 └── main.py              # app factory, CORS, lifespan
 tests/                   # pytest suite
-docs/PROJECT_SPEC.md     # product brief and decisions
 ```
 
 ## Behaviour worth knowing
